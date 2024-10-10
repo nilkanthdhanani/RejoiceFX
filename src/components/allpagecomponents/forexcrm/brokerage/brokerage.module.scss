@@ -1,0 +1,79 @@
+.brokerage {
+    max-width: 1860px;
+    padding: 120px 130px 88px 120px;
+    margin: 0 auto 270px auto;
+    border-radius: 34px;
+    background-color: #014eff;
+    position: relative;
+
+    .contactBannerbottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .brokerageHead {
+        max-width: 650px;
+        position: relative;
+        z-index: 2;
+
+        h2 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 64px;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+            margin-bottom: 46px;
+        }
+
+        .inputBoxButton {
+            margin-top: 46px;
+
+            button {
+                padding: 18px 28px;
+                border: 2px solid transparent;
+                border-radius: 40px;
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-family: Helvetica Now Text;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+                color: #014eff;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+
+                svg {
+                    fill: #014eff;
+                    transition: 0.3s ease-in-out;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    border: 2px solid #ffffff;
+                    color: #ffffff;
+                    transition: all 0.3s ease-in-out;
+
+                    svg {
+                        fill: #ffffff;
+                        transform: translateX(6px);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    .brokerageImgae {
+        position: absolute;
+        right: 130px;
+        bottom: -150px;
+    }
+}

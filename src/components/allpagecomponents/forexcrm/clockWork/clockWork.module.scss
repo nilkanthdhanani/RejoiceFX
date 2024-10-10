@@ -1,0 +1,137 @@
+.clockWork {
+    margin: 120px 0;
+
+    .container {
+        max-width: 1660px;
+        margin: 0 auto;
+        padding: 0 30px;
+
+        .clockWorkDetail {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+
+            a {
+                padding: 10px 17px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                color: #0b0b14;
+                background: rgba(230, 230, 255, 0.8);
+                border: 1px solid #b0b0ff;
+                border-radius: 40px;
+            }
+
+            h2 {
+                color: #0b0b14;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                text-align: center;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                text-align: center;
+                color: #595959;
+            }
+        }
+
+        .clockWorkBox, .clockWorkBox2, .clockWorkBox3 {
+            background: #f6f6f8;
+            border-radius: 34px;
+            padding: 62px 62px 80px 62px;
+            display: grid;
+            grid-template-columns: 1fr 455px;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 120px;
+
+            .clockWorkBoxDetail {
+                h3 {
+                    margin-bottom: 12px;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 29px;
+                    color: #0b0b14;
+                    display: flex;
+                    align-items: center;
+                    gap: 26px;
+
+                    span {
+                        font-size: 50px;
+                        font-weight: 300;
+                        line-height: 60px;
+                        color: #cccccc;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    color: #737373;
+                }
+
+                .clockWorkBoxContent {
+                    display: flex;
+                    gap: 40px;
+                    margin-top: 59px;
+
+                    .clockWorkBoxContent1 {
+                        max-width: 420px;
+
+                        .clockWorkBoxImg {
+                            width: 80px;
+                            height: 80px;
+                            background-color: #e6edff;
+                            border-radius: 50px;
+                            border: 1px solid #b0c8ff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+
+                            img {
+                                position: absolute;
+                            }
+                        }
+
+                        h4 {
+                            margin: 20px 0 10px 0;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            color: #0b0b14;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: #737373;
+                        }
+                    }
+                }
+            }
+        }
+
+        .clockWorkBox2 {
+            grid-template-columns: 455px 1fr;
+            gap: 145px;
+        }
+
+        .clockWorkBox3 {
+            // margin-bottom: 0;
+        }
+    }
+}

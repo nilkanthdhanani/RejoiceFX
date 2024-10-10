@@ -1,0 +1,149 @@
+.brokerage {
+    max-width: 1860px;
+    padding: 120px 130px 88px 120px;
+    margin: 0 auto 120px auto;
+    border-radius: 34px;
+    background-color: #014eff;
+    position: relative;
+
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+
+        .contactBannerbottom {
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        .brokerageHead {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 60px;
+
+            a {
+                padding: 10px 17px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                color: #ffffff;
+                background: rgba(176, 200, 255, 0.2);
+                border: 1px solid #b0b0ff;
+                border-radius: 40px;
+            }
+
+            h2 {
+                max-width: 1212px;
+                color: #ffffff;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                text-align: center;
+                margin-top: 12px;
+            }
+        }
+
+        .brokerageGrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            margin-bottom: 115px;
+
+            .brokerageGridBox {
+                padding: 40px;
+                border-radius: 22px;
+                background: rgba(176, 200, 255, 0.2);
+
+                .brokerageGridIcon {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    margin-bottom: 30px;
+
+                    .clockWorkBoxImg {
+                        width: 80px;
+                        height: 80px;
+                        background: rgba(230, 237, 255, 0.3);
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: #fff;
+                    }
+                }
+                .ProcessContentList {
+                    .ProcessContentListDiv {
+                        display: flex;
+                        gap: 14px;
+                        margin-bottom: 18px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 29px;
+                            color: #e6e6e6;
+                        }
+                    }
+                }
+            }
+        }
+
+        .brokerageGrid2 {
+            padding: 0 38px 20px 40px;
+            margin: 0 40px;
+            border-bottom: 1px solid #b0c8ff;
+            display: flex;
+            gap: 47px;
+
+            .brokerageGrid2Box {
+                max-width: 290px;
+
+                h4 {
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    color: #dbdbdd;
+                }
+            }
+
+            .brokerageGrid2BoxLine {
+                border-right: 1px solid #b0c8ff;
+            }
+        }
+    }
+}

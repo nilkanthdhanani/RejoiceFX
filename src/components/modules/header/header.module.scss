@@ -1,0 +1,7 @@
+@import '../../../assets/styles/main.scss';
+.header {
+    font-size: rem(30);
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: rem(1) solid getColorHex("border-color");
+}
