@@ -1,8 +1,10 @@
 @import '../../../assets/styles/main.scss';
 
 .homepage {
-    height: 100vh;
+    height: 80vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }

@@ -1,7 +1,56 @@
-@import '../../../assets/styles/main.scss';
+@import "../../../assets/styles/main.scss";
+
 .header {
-    font-size: rem(30);
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: rem(1) solid getColorHex("border-color");
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    padding: 27px 0;
+
+    .headerDiv {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            img {
+                display: block;
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+
+            .menuDiv {
+                a {
+                    padding: 8px 20px;
+                    border-radius: 50px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: #0f0f1a;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    transition: 0.3s ease-in-out;
+
+                    img {
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+                        background-color: #e6edff;
+                        transition: 0.3s ease-in-out;
+
+                        img {
+                            transition: 0.3s ease-in-out;
+                            transform: rotate(-180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -2,3 +2,41 @@
 @import "typography";
 @import "variables";
 
+.contactButton {
+    button {
+        padding: 16px 28px;
+        border: 1.4px solid transparent;
+        border-radius: 40px;
+        background-color: #014eff;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        span {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+
+        svg {
+            fill: #fff;
+            transition: 0.3s ease-in-out;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border: 1.4px solid #014eff;
+            color: #0b0b14;
+            transition: all 0.3s ease-in-out;
+
+            svg {
+                fill: #0b0b14;
+                transform: translateX(6px);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}

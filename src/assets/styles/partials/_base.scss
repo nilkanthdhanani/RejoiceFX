@@ -8,27 +8,8 @@
 @import "select";
 
 // container utility
-@mixin container-medium-1 {
-  max-width: 1320px;
+.container {
+  max-width: calc(1600px + 60px);
   margin: 0 auto;
-}
-
-@mixin container-medium-2 {
-  max-width: 1312px;
-  margin: 0 auto;
-}
-
-@mixin container-medium-3 {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-@mixin container-large-1 {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-@mixin container-large-2 {
-  max-width: 844px;
-  margin: 0 auto;
+  padding: 0 30px;
 }
