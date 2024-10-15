@@ -2,9 +2,13 @@
 @import "typography";
 @import "variables";
 
+// <div className={styles.StartedButton}>
+// <button><span>Get Started Now</span><ArrowSmallRight /></button>
+// </div>
+
 .contactButton {
     button {
-        padding: 16px 28px;
+        padding: 14px 28px;
         border: 1.4px solid transparent;
         border-radius: 40px;
         background-color: #014eff;
@@ -16,9 +20,11 @@
         transition: 0.3s ease-in-out;
 
         span {
+            font-family: "DM sans";
             font-size: 18px;
             font-weight: 500;
             line-height: 26px;
+            white-space: nowrap;
         }
 
         svg {
@@ -38,5 +44,113 @@
                 transition: all 0.3s ease-in-out;
             }
         }
+    }
+}
+
+.StartedButton {
+    button {
+        padding: 14px 28px;
+        border: 1.4px solid transparent;
+        border-radius: 40px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #014eff;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        span {
+            font-family: "DM sans";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            white-space: nowrap;
+        }
+
+        svg {
+            fill: #014eff;
+            transition: 0.3s ease-in-out;
+        }
+
+        &:hover {
+            background-color: transparent;
+            border: 1.4px solid #fff;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+
+            svg {
+                fill: #fff;
+                transform: translateX(6px);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.footerDiv3 {
+    button {
+        padding: 14px 28px;
+        border: 1.4px solid #014eff;
+        border-radius: 40px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #0b0b14;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        
+        span {
+            font-family: "DM sans";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            white-space: nowrap;
+        }
+
+        svg {
+            fill: #0b0b14;
+            transition: 0.3s ease-in-out;
+        }
+
+        &:hover {
+            background-color: #014eff;
+            border: 1.4px solid transparent;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+
+            svg {
+                fill: #fff;
+                transform: translateX(6px);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+// <div className={styles.headingBatch}>
+// <Link href={"/"} >
+//     <Image src={buttonFxWhite} alt="buttonFxWhite" />
+//     <span>Take the Next Step</span>
+// </Link>
+// </div>
+
+.headingBatch {
+    a {
+        padding: 10px 17px;
+        display: flex;
+        width: max-content;
+        align-items: center;
+        gap: 10px;
+        text-transform: uppercase;
+        font-family: "DM sans";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #ffffff;
+        background: rgba(176, 200, 255, 0.2);
+        border: 1px solid #b0b0ff;
+        border-radius: 40px;
     }
 }

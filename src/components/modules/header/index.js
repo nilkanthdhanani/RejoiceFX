@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './header.module.scss';
 import Image from 'next/image';
 import logo from '@/assets/images/svg/logo.svg';
@@ -118,7 +117,9 @@ export default function Header() {
               </div>
             </div>
             <div className={styles.contactButton}>
-              <button type="submit" ><span>Contact Us</span><ArrowSmallRight /> </button>
+              <Link href={"/contactus"}>
+                <button type="submit" ><span>Contact Us</span><ArrowSmallRight /> </button>
+              </Link>
             </div>
           </div>
         </div>

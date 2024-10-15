@@ -1,7 +1,124 @@
-@import '../../../assets/styles/main.scss';
-.footer {
-    font-size: rem(30);
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: rem(1) solid getColorHex("border-color");
+@import "../../../assets/styles/main.scss";
+
+footer {
+    .footerDiv {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px 30px;
+        margin-bottom: 36px;
+
+        .footerDiv1 {
+            max-width: 425px;
+
+            .footerDiv1Details {
+                margin: 42px 0 30px 0;
+                display: flex;
+                gap: 30px;
+            }
+
+            .footerDiv1DetailsBox {
+                span {
+                    display: block;
+                    font-family: "DM sans";
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    letter-spacing: -0.01em;
+                    color: #737373;
+                }
+
+                p {
+                    margin-top: 16px;
+                    font-family: "DM sans";
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: #0f0f1a;
+                }
+            }
+        }
+
+        .footerDiv2 {
+            span {
+                display: block;
+                margin-bottom: 24px;
+                font-family: "DM sans";
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: -0.01em;
+                color: #737373;
+            }
+
+            .footerDiv2Main {
+                display: flex;
+                gap: 50px;
+
+                .footerDiv2Link {
+                    a {
+                        display: block;
+                        font-family: "DM sans";
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        color: #0f0f1a;
+                        margin-bottom: 18px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footerDiv3 {
+            max-width: 450px;
+
+            h3 {
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 40px;
+                letter-spacing: -0.01em;
+                color: #0b0b14;
+            }
+
+            form {
+                input {
+                    width: 100%;
+                    margin: 20px 0 40px 0;
+                    padding: 14px 26px;
+                    border-radius: 25px;
+                    border: 1px solid #cccccc;
+                    font-family: "DM sans";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #0f0f1a;
+
+                    &:focus {
+                        outline: 1px solid #014eff;
+                    }
+                }
+
+                ::placeholder {
+                    color: #737373;
+                }
+            }
+        }
+    }
+
+    .footerBottom {
+        border-top: 1px solid #bfbfbf;
+        padding: 25px;
+
+        p {
+            text-align: center;
+            font-family: "DM sans";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #0f0f1a;
+        }
+    }
 }
