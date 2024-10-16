@@ -3,100 +3,41 @@
 .mauritiusFormation {
     margin: 120px 0;
 
-    .container {
-        max-width: 1660px;
-        margin: 0 auto;
-        padding: 0 30px;
+    .formationGrid {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 50px;
 
-        .formationGrid {
-            display: grid;
-            grid-template-columns: 40% 1fr;
-            gap: 50px;
+        .formationGridImg {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 24px;
+            }
+        }
 
-            .formationGridImg {
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 24px;
-                }
+        .formationGridDiv {
+            padding: 67px 75px;
+            border-radius: 34px;
+            background: #f1f2f4;
+
+            h2 {
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                color: #0b0b14;
+                margin-top: 4px;
             }
 
-            .formationGridDiv {
-                padding: 67px 75px;
-                border-radius: 34px;
-                background: #f1f2f4;
-
-                a {
-                    padding: 10px 17px;
-                    display: flex;
-                    max-width: fit-content;
-                    align-items: center;
-                    gap: 10px;
-                    text-transform: uppercase;
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 20px;
-                    color: #0b0b14;
-                    background: rgba(230, 230, 255, 0.8);
-                    border: 1px solid #b0b0ff;
-                    border-radius: 40px;
-                }
-
-                h2 {
-                    font-size: 48px;
-                    font-weight: 600;
-                    line-height: 70px;
-                    letter-spacing: -0.01em;
-                    color: #0b0b14;
-                    margin-top: 4px;
-                }
-
-                p {
-                    font-size: 20px;
-                    font-weight: 400;
-                    line-height: 32px;
-                    color: #737373;
-                }
-
-                .formationBoxButton {
-                    margin-top: 46px;
-
-                    button {
-                        padding: 18px 28px;
-                        border: 2px solid transparent;
-                        border-radius: 40px;
-                        background-color: #014eff;
-                        display: flex;
-                        align-items: center;
-                        gap: 6px;
-                        font-family: Helvetica Now Text;
-                        font-size: 18px;
-                        font-weight: 500;
-                        line-height: 26px;
-                        color: #fff;
-                        cursor: pointer;
-                        transition: 0.3s ease-in-out;
-
-                        svg {
-                            fill: #fff;
-                            transition: 0.3s ease-in-out;
-                        }
-
-                        &:hover {
-                            background-color: transparent;
-                            border: 2px solid #014eff;
-                            color: #0b0b14;
-                            transition: all 0.3s ease-in-out;
-
-                            svg {
-                                fill: #0b0b14;
-                                transform: translateX(6px);
-                                transition: all 0.3s ease-in-out;
-                            }
-                        }
-                    }
-                }
+            p {
+                font-family: "DM sans";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                color: #737373;
+                margin: 16px 0 46px 0;
             }
         }
     }

@@ -3,131 +3,113 @@
 .mauritiusProgress {
     margin: 120px 0;
 
-    .container {
-        max-width: 1660px;
-        margin: 0 auto;
-        padding: 0 30px;
+    .mauritiusProgressDetail {
+        max-width: 886px;
+        margin: 0 auto 60px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        .mauritiusProgressDetail {
-            max-width: 886px;
-            margin: 0 auto 60px auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        h2 {
+            color: #0b0b14;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            margin: 4px 0 16px 0;
+        }
 
-            a {
-                padding: 10px 17px;
+        p {
+            font-family: "DM sans";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+            color: #595959;
+        }
+    }
+
+    .progressGrid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 25px;
+
+        .progressGridBox {
+            padding: 30px 30px 115px 30px;
+            background: rgba(230, 230, 230, 0.2);
+            border-radius: 22px;
+            border: 1px solid #b0c8ff;
+            position: relative;
+            overflow: hidden;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 2;
+                height: 10px;
+                width: 100%;
+                background-color: #fafafa;
+            }
+
+            .progressGridBoxImg {
+                width: 97px;
+                height: 97px;
+                background-color: #e6edff;
+                border-radius: 50px;
+                border: 1px solid #b0c8ff;
                 display: flex;
                 align-items: center;
-                gap: 10px;
-                text-transform: uppercase;
-                font-size: 14px;
+                justify-content: center;
+                position: relative;
+
+                img {
+                    position: absolute;
+                }
+            }
+
+            h3 {
+                font-size: 22px;
                 font-weight: 500;
-                line-height: 20px;
-                color: #0b0b14;
-                background: rgba(230, 230, 255, 0.8);
-                border: 1px solid #b0b0ff;
-                border-radius: 40px;
-            }
-
-            h2 {
-                color: #0b0b14;
-                font-size: 48px;
-                font-weight: 600;
-                line-height: 70px;
-                letter-spacing: -0.01em;
-                text-align: center;
-                margin-bottom: 16px;
-            }
-
-            p {
-                font-size: 20px;
-                font-weight: 400;
                 line-height: 32px;
-                text-align: center;
-                color: #595959;
+                color: #0f0f1a;
+                margin-top: 20px;
+            }
+
+            .progressGridNumber {
+                position: absolute;
+                bottom: -40px;
+                font-family: "DM sans";
+                font-size: 100px;
+                font-weight: 300;
+                line-height: 120px;
+                color: #cccccc;
             }
         }
 
-        .progressGrid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 25px;
+        .progressGridBoxLast {
+            background-color: #014eff;
+            padding: 30px;
+            border-radius: 22px;
+            border: 1px solid #b0c8ff;
 
-            .progressGridBox {
-                padding: 30px 30px 117px 30px;
-                background: rgba(230, 230, 230, 0.2);
-                border-radius: 22px;
-                border: 1px solid #b0c8ff;
-                position: relative;
-                overflow: hidden;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    z-index: 2;
-                    height: 10px;
-                    width: 100%;
-                    background-color: #fafafa;
-                }
-
-                .progressGridBoxImg {
-                    width: 97px;
-                    height: 97px;
-                    background-color: #e6edff;
-                    border-radius: 50px;
-                    border: 1px solid #b0c8ff;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-
-                    img {
-                        position: absolute;
-                    }
-                }
-
-                h3 {
-                    font-size: 22px;
-                    font-weight: 500;
-                    line-height: 32px;
-                    color: #0f0f1a;
-                    margin-top: 20px;
-                }
-
-                .progressGridNumber {
-                    position: absolute;
-                    bottom: -33px;
-                    font-size: 100px;
-                    font-weight: 300;
-                    line-height: 120px;
-                    color: #cccccc;
-                }
+            span {
+                display: block;
+                margin-bottom: 18px;
+                font-family: "DM sans";
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 32px;
+                color: #fff;
             }
 
-            .progressGridBoxLast {
-                background-color: #014eff;
-                padding: 30px;
-                border-radius: 22px;
-                border: 1px solid #b0c8ff;
-
-                span {
-                    display: block;
-                    margin-bottom: 18px;
-                    color: #fff;
-                    font-size: 22px;
-                    font-weight: 500;
-                    line-height: 32px;
-                }
-
-                h4 {
-                    font-size: 32px;
-                    font-weight: 500;
-                    line-height: 32px;
-                    color: #fff;
-                }
+            h4 {
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 32px;
+                color: #fff;
             }
         }
     }

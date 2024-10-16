@@ -1,16 +1,17 @@
+@import "../../../../assets/styles/main.scss";
+
 .brokerage {
-    max-width: 1860px;
     padding: 120px 130px 88px 120px;
-    margin: 0 auto 270px auto;
+    margin-bottom: 270px;
     border-radius: 34px;
     background-color: #014eff;
     position: relative;
 
     .contactBannerbottom {
         position: absolute;
-        left: 0;
+        left: 10px;
         bottom: 0;
-        width: 100%;
+        width: calc(100% - 20px);
 
         img {
             object-fit: cover;

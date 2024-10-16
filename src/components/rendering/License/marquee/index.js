@@ -10,27 +10,31 @@ import marqueelogo5 from "@/assets/images/svg/marqueelogo5.svg";
 
 export default function Marquee() {
     return (
-        <section className={styles.marqueeDiv}>
-            <div className={styles.marqueeDivHead}>
-                <h2>Trusted Partners</h2>
-            </div>
-            <div className={styles.marqueeDivMain}>
-                <div className={styles.marqueeDivMainList}>
-                    <Image src={marqueelogo1} alt="marqueelogo1" />
-                    <Image src={marqueelogo2} alt="marqueelogo2" />
-                    <Image src={marqueelogo3} alt="marqueelogo3" />
-                    <Image src={marqueelogo4} alt="marqueelogo4" />
-                    <Image src={marqueelogo5} alt="marqueelogo5" />
-                    <Image src={marqueelogo1} alt="marqueelogo1" />
-                    <Image src={marqueelogo2} alt="marqueelogo2" />
-                    <Image src={marqueelogo3} alt="marqueelogo3" />
-                    <Image src={marqueelogo4} alt="marqueelogo4" />
-                    <Image src={marqueelogo5} alt="marqueelogo5" />
-                    <Image src={marqueelogo1} alt="marqueelogo1" />
-                    <Image src={marqueelogo2} alt="marqueelogo2" />
-                    <Image src={marqueelogo3} alt="marqueelogo3" />
-                    <Image src={marqueelogo4} alt="marqueelogo4" />
-                    <Image src={marqueelogo5} alt="marqueelogo5" />
+        <section>
+            <div className={styles.containerMax}>
+                <div className={styles.marqueeDiv}>
+                    <div className={styles.marqueeDivHead}>
+                        <h2>Trusted Partners</h2>
+                    </div>
+                    <div className={styles.marqueeDivMain}>
+                        <div className={styles.marqueeDivMainList}>
+                            <Image src={marqueelogo1} alt="marqueelogo1" />
+                            <Image src={marqueelogo2} alt="marqueelogo2" />
+                            <Image src={marqueelogo3} alt="marqueelogo3" />
+                            <Image src={marqueelogo4} alt="marqueelogo4" />
+                            <Image src={marqueelogo5} alt="marqueelogo5" />
+                            <Image src={marqueelogo1} alt="marqueelogo1" />
+                            <Image src={marqueelogo2} alt="marqueelogo2" />
+                            <Image src={marqueelogo3} alt="marqueelogo3" />
+                            <Image src={marqueelogo4} alt="marqueelogo4" />
+                            <Image src={marqueelogo5} alt="marqueelogo5" />
+                            <Image src={marqueelogo1} alt="marqueelogo1" />
+                            <Image src={marqueelogo2} alt="marqueelogo2" />
+                            <Image src={marqueelogo3} alt="marqueelogo3" />
+                            <Image src={marqueelogo4} alt="marqueelogo4" />
+                            <Image src={marqueelogo5} alt="marqueelogo5" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

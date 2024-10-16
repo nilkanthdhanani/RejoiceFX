@@ -1,5 +1,4 @@
 import styles from './licenseFormation.module.scss'
-import Link from "next/link";
 import Image from "next/image";
 
 import ArrowSmallRight from "@/assets/images/svg/arrowSmallRight";
@@ -14,14 +13,16 @@ export default function LicenseFormation({ startImage, startButton, startTitle, 
                         <Image src={startImage} alt="mauritiusFormation" />
                     </div>
                     <div className={styles.formationGridDiv}>
-                        <Link href={"/"} >
-                            <Image src={buttonFx} alt="buttonFx" />
-                            <span>{startButton}</span>
-                        </Link>
+                        <div className={styles.headingBatch}>
+                            <button type="button" >
+                                <Image src={buttonFx} alt="buttonFx" />
+                                <span>{startButton}</span>
+                            </button>
+                        </div>
                         <h2>{startTitle}</h2>
                         <p>{startSubTitle}</p>
-                        <div className={styles.formationBoxButton}>
-                            <button type="submit">Yes, I Want To Incorporate <ArrowSmallRight /> </button>
+                        <div className={styles.contactButton}>
+                            <button><span>Yes, I Want To Incorporate</span><ArrowSmallRight /></button>
                         </div>
                     </div>
                 </div>

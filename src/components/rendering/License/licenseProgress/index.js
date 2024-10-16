@@ -1,6 +1,5 @@
 
 import styles from './licenseProgress.module.scss'
-import Link from "next/link";
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
@@ -14,10 +13,12 @@ export default function LicenseProgress({ progressHead, proccesFirst, proccesSec
         <section className={styles.mauritiusProgress}>
             <div className={styles.container}>
                 <div className={styles.mauritiusProgressDetail}>
-                    <Link href={"/"} >
-                        <Image src={buttonFx} alt="buttonFx" />
-                        <span>Process</span>
-                    </Link>
+                    <div className={styles.headingBatch}>
+                        <button type="button" >
+                            <Image src={buttonFx} alt="buttonFx" />
+                            <span>Process</span>
+                        </button>
+                    </div>
                     <h2>{progressHead}</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>

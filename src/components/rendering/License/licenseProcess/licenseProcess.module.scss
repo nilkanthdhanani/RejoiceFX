@@ -3,33 +3,12 @@
 .mauritiusProcess {
     margin: 120px 0;
 
-    .container {
-        max-width: 1660px;
-        margin: 0 auto;
-        padding: 0 30px;
-    }
-
     .mauritiusProcessDetail {
-        max-width: 950px;
+        max-width: 1174px;
         margin: 0 auto 60px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        a {
-            padding: 10px 17px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-            color: #0b0b14;
-            background: rgba(230, 230, 255, 0.8);
-            border: 1px solid #b0b0ff;
-            border-radius: 40px;
-        }
 
         h2 {
             color: #0b0b14;
@@ -43,8 +22,7 @@
     }
 
     .ProcessDiv {
-        padding: 70px 30px;
-        margin: 0 30px;
+        padding: 70px 0;
         background-color: #f1f2f4;
         border-radius: 34px;
 
@@ -64,6 +42,7 @@
                 }
 
                 span {
+                    font-family: "DM sans";
                     display: block;
                     font-size: 20px;
                     font-weight: 400;
@@ -75,6 +54,7 @@
                     margin: 14px 0 38px 0;
 
                     p {
+                        font-family: "DM sans";
                         font-size: 18px;
                         font-weight: 400;
                         line-height: 32px;
@@ -114,6 +94,7 @@
                         }
 
                         p {
+                            font-family: "DM sans";
                             font-size: 20px;
                             font-weight: 400;
                             line-height: 29px;

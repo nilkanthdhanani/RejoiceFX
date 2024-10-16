@@ -2,7 +2,7 @@
 @import "typography";
 @import "variables";
 
-// <div className={styles.StartedButton}>
+// <div className={styles.contactButton}>
 // <button><span>Get Started Now</span><ArrowSmallRight /></button>
 // </div>
 .contactButton,
@@ -170,15 +170,19 @@
         width: max-content;
         align-items: center;
         gap: 10px;
-        text-transform: uppercase;
-        font-family: "DM sans";
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        color: #0b0b14;
         background: rgba(230, 230, 255, 0.8);
         border: 1px solid #b0b0ff;
         border-radius: 40px;
+        
+        span {
+            text-transform: uppercase;
+            font-family: "DM sans";
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #0b0b14;
+            white-space: nowrap;
+        }
     }
 }
 
@@ -190,14 +194,18 @@
         width: max-content;
         align-items: center;
         gap: 10px;
-        text-transform: uppercase;
-        font-family: "DM sans";
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        color: #ffffff;
         background: rgba(176, 200, 255, 0.2);
         border: 1px solid #b0b0ff;
         border-radius: 40px;
+        
+        span {
+            text-transform: uppercase;
+            font-family: "DM sans";
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #fff;
+            white-space: nowrap;
+        }
     }
 }

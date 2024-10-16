@@ -1,7 +1,4 @@
-
-
 import styles from './clockWork.module.scss'
-import Link from "next/link";
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
@@ -21,10 +18,12 @@ export default function ClockWork() {
         <section className={styles.clockWork}>
             <div className={styles.container}>
                 <div className={styles.clockWorkDetail}>
-                    <Link href={"/"} >
-                        <Image src={buttonFx} alt="buttonFx" />
-                        <span>Work Process</span>
-                    </Link>
+                        <div className={styles.headingBatch}>
+                            <button type="button" >
+                                <Image src={buttonFx} alt="buttonFx" />
+                                <span>Work Process</span>
+                            </button>
+                        </div>
                     <h2>Works like a clock</h2>
                 </div>
                 <div className={styles.clockWorkBox}>

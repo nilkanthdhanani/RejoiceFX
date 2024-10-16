@@ -1,7 +1,6 @@
 @import "../../../../assets/styles/main.scss";
 
 .heroBanner {
-    padding: 0 30px;
     margin-bottom: 400px;
 
     .heroBannerinner {
@@ -14,8 +13,8 @@
         .heroBannerbottom {
             position: absolute;
             bottom: 0;
-            left: 0;
-            width: 100%;
+            left: 10px;
+            width: calc(100% - 20px);
 
             img {
                 object-fit: cover;

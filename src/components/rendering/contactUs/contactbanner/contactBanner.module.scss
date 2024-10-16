@@ -1,8 +1,6 @@
 @import "../../../../assets/styles/main.scss";
 
 .contactBanner {
-    padding: 0 30px;
-
     .contactBannerinner {
         width: 100%;
         padding: 100px 30px 150px 30px;
@@ -39,6 +37,7 @@
         }
 
         .contactBannerDetail {
+            position: relative;
             max-width: 1174px;
             display: flex;
             flex-direction: column;

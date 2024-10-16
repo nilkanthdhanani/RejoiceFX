@@ -1,6 +1,5 @@
 
 import styles from './licenseAdvantage.module.scss'
-import Link from "next/link";
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
@@ -16,10 +15,12 @@ export default function LicenseAdvantage() {
                         <Image src={advantageImg} alt="advantageImg" />
                     </div>
                     <div className={styles.ProcessContent}>
-                        <Link href={"/"} >
-                            <Image src={buttonFx} alt="buttonFx" />
-                            <span>EXPLICIT</span>
-                        </Link>
+                        <div className={styles.headingBatch}>
+                            <button type="button" >
+                                <Image src={buttonFx} alt="buttonFx" />
+                                <span>Explicit</span>
+                            </button>
+                        </div>
                         <h2>Advantages</h2>
                         <div className={styles.ProcessContentList}>
                             <div className={styles.ProcessContentListDiv}>

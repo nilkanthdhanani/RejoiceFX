@@ -21,9 +21,9 @@
 
         .contactBannerbottom {
             position: absolute;
-            left: 0;
+            left: 10px;
             bottom: 0;
-            width: 100%;
+            width: calc(100% - 20px);
 
             img {
                 object-fit: cover;
@@ -32,6 +32,7 @@
 
         .tradingDivMain {
             position: relative;
+            z-index: 1;
             display: flex;
             justify-content: space-between;
             align-items: center;
