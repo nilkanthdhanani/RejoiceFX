@@ -158,10 +158,10 @@
 }
 
 // <div className={styles.headingBatch}>
-// <Link href={"/"} >
+// <button type="button" >
 //     <Image src={buttonFx} alt="buttonFx" />
 //     <span>Take the Next Step</span>
-// </Link>
+// </button>
 // </div>
 .headingBatch {
     button {
