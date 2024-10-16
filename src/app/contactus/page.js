@@ -1,16 +1,11 @@
 "use client"
-
-import ContactInput from "@/components/allpagecomponents/contactUscompo/contactInput";
-import ContactBanner from "@/components/allpagecomponents/contactUscompo/herobanner";
-
-
+import ContactUsPage from "@/components/rendering/contactUs";
 
 export default function Contactus() {
 
     return (
         <>
-            <ContactBanner />
-            <ContactInput />
+            <ContactUsPage />
         </>
     );
 }

@@ -1,12 +1,12 @@
 
-import styles from './mauritiusInput.module.scss'
+import styles from './licenseInput.module.scss'
 import Link from "next/link";
 import Image from "next/image";
 
 import ArrowSmallRight from "@/assets/images/svg/arrowSmallRight";
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
 
-export default function MauritiusInput() {
+export default function LicenseInput() {
     return (
         <section className={styles.mauritiusInput}>
             <div className={styles.container}>

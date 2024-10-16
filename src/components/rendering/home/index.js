@@ -1,13 +1,10 @@
-import React from "react";
-import styles from "./home.module.scss";
-import Link from "next/link";
+
+import HeroBanner from "@/components/rendering/home/heroBanner";
 
 export default function HomePage() {
     return (
-        <section>
-            <div className={styles.homepage}>
-                <h1>Home page</h1>
-            </div>
-        </section>
+        <main>
+            <HeroBanner />
+        </main>
     );
 }

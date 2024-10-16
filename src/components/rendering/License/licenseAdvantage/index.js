@@ -1,5 +1,5 @@
 
-import styles from './mauritiusAdvantage.module.scss'
+import styles from './licenseAdvantage.module.scss'
 import Link from "next/link";
 import Image from "next/image";
 
@@ -7,7 +7,7 @@ import buttonFx from "@/assets/images/svg/buttonFx.svg";
 import advantageImg from "@/assets/images/png/advantageImg.png";
 import listIcon from "@/assets/images/svg/listIcon.svg";
 
-export default function MauritiusAdvantage() {
+export default function LicenseAdvantage() {
     return (
         <section className={styles.advantage}>
             <div className={styles.container}>

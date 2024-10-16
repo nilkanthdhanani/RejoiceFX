@@ -1,20 +1,22 @@
+
 import styles from './header.module.scss';
+import Link from 'next/link';
 import Image from 'next/image';
+
 import logo from '@/assets/images/svg/logo.svg';
 import angleDown from '@/assets/images/svg/angleDown.svg';
-import Link from 'next/link';
 import ArrowSmallRight from '@/assets/images/svg/arrowSmallRight';
 
 const licenceDropBox = [
   {
     name: "Mauritius Forex License",
     details: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    link: "/forexlicencemauritius",
+    link: "/forex-licence-mauritius",
   },
   {
     name: "St. Vincent Forex License",
     details: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    link: "/forexlicencemvincent",
+    link: "/forex-licence-vincent",
   },
 ];
 
@@ -57,7 +59,7 @@ export default function Header() {
             </div>
             <div className={styles.menu}>
               <div className={styles.menuDiv}>
-                <Link href={"/forexcrm"}>
+                <Link href={"/forex-crm"}>
                   <div className={styles.menuLink}>Forex CRM</div>
                 </Link>
               </div>

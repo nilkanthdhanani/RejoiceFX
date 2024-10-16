@@ -1,8 +1,9 @@
-import React from 'react'
+
 import styles from './footer.module.scss';
-import Image from 'next/image';
-import logo from '@/assets/images/svg/logo.svg';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import logo from '@/assets/images/svg/logo.svg';
 import ArrowSmallRight from '@/assets/images/svg/arrowSmallRight';
 
 export default function Footer() {

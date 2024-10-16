@@ -1,5 +1,5 @@
 
-import styles from './mauritiusProcess.module.scss'
+import styles from './licenseProcess.module.scss'
 import Link from "next/link";
 import Image from "next/image";
 
@@ -7,7 +7,7 @@ import buttonFx from "@/assets/images/svg/buttonFx.svg";
 import mauritiusLicenseImg from "@/assets/images/png/mauritiusLicenseImg.png";
 import listIcon from "@/assets/images/svg/listIcon.svg";
 
-export default function MauritiusProcess({ processHead, processPera }) {
+export default function LicenseProcess({ processHead, processPera }) {
     return (
         <section className={styles.mauritiusProcess}>
             <div className={styles.container}>

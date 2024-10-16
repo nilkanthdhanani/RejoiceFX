@@ -1,5 +1,5 @@
 
-import styles from './mauritiusProgress.module.scss'
+import styles from './licenseProgress.module.scss'
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ import applyIcon from "@/assets/images/svg/applyIcon.svg";
 import currencyIco from "@/assets/images/svg/currencyIco.svg";
 import bookIcon from "@/assets/images/svg/bookIcon.svg";
 
-export default function MauritiusProgress({ progressHead, proccesFirst, proccesSecond, proccesThird, proccesFourth, proccesFifth }) {
+export default function LicenseProgress({ progressHead, proccesFirst, proccesSecond, proccesThird, proccesFourth, proccesFifth }) {
     return (
         <section className={styles.mauritiusProgress}>
             <div className={styles.container}>

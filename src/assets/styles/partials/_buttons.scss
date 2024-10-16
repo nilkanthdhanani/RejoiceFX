@@ -5,8 +5,8 @@
 // <div className={styles.StartedButton}>
 // <button><span>Get Started Now</span><ArrowSmallRight /></button>
 // </div>
-
-.contactButton {
+.contactButton,
+.contactButton2 {
     button {
         padding: 14px 28px;
         border: 1.4px solid transparent;
@@ -42,6 +42,34 @@
                 fill: #0b0b14;
                 transform: translateX(6px);
                 transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.contactButton2 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    button {
+        &:nth-child(2) {
+            background-color: transparent;
+            border: 1.4px solid #014eff;
+            color: #0b0b14;
+
+            svg {
+                fill: #0b0b14;
+            }
+
+            &:hover {
+                background-color: #014eff;
+                border: 1.4px solid #014eff;
+                color: #fff;
+
+                svg {
+                    fill: #fff;
+                }
             }
         }
     }
@@ -100,7 +128,7 @@
         color: #0b0b14;
         cursor: pointer;
         transition: 0.3s ease-in-out;
-        
+
         span {
             font-family: "DM sans";
             font-size: 18px;
@@ -131,13 +159,32 @@
 
 // <div className={styles.headingBatch}>
 // <Link href={"/"} >
-//     <Image src={buttonFxWhite} alt="buttonFxWhite" />
+//     <Image src={buttonFx} alt="buttonFx" />
 //     <span>Take the Next Step</span>
 // </Link>
 // </div>
-
 .headingBatch {
-    a {
+    button {
+        padding: 10px 17px;
+        display: flex;
+        width: max-content;
+        align-items: center;
+        gap: 10px;
+        text-transform: uppercase;
+        font-family: "DM sans";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #0b0b14;
+        background: rgba(230, 230, 255, 0.8);
+        border: 1px solid #b0b0ff;
+        border-radius: 40px;
+    }
+}
+
+// buttonFxWhite
+.headingBatchWhite {
+    button {
         padding: 10px 17px;
         display: flex;
         width: max-content;

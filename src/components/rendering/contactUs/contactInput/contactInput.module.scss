@@ -1,0 +1,79 @@
+@import "../../../../assets/styles/main.scss";
+
+.contactInput {
+    margin: 120px 0;
+
+    .container {
+        max-width: 1660px;
+        margin: 0 auto;
+        padding: 0 30px;
+
+        .inputGrid {
+            display: grid;
+            grid-template-columns: 36% 1fr;
+            gap: 107px;
+
+            .inputGridDiv {
+                h2 {
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 70px;
+                    letter-spacing: -0.01em;
+                    color: #0b0b14;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    color: #737373;
+                }
+            }
+
+            form {
+                .formDivOne {
+                    margin-bottom: 40px;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 40px;
+                }
+
+                .inputBox, .inputBox2 {
+                    label {
+                        display: block;
+                        margin-bottom: 14px;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: -0.01em;
+                        color: #0b0b14;
+                    }
+
+                    input,
+                    textarea {
+                        padding: 14px 21px;
+                        border-radius: 25px;
+                        border: 1px solid #cccccc;
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #0b0b14;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    ::placeholder {
+                        color: #737373;
+                    }
+                }
+
+                .inputBox2 {
+                    margin-bottom: 46px;
+                }
+            }
+        }
+    }
+}
