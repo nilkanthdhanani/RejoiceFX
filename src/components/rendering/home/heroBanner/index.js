@@ -9,7 +9,46 @@ import buttonFx from "@/assets/images/svg/buttonFx.svg";
 import heroBanner from "@/assets/images/png/heroBanner.png";
 import ArrowSmallRight from '@/assets/images/svg/arrowSmallRight';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
+function SampleNextArrow(props) {
+    const { className, style } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "none" }}
+        />
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "none" }}
+        />
+    );
+}
+
 export default function HeroBanner() {
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        vertical: true,
+        verticalSwiping: true,
+        autoplay: true,
+        speed: 3000,
+        autoplaySpeed: 3000,
+        pauseOnHover: false,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+    };
+
     return (
         <section className={styles.heroBanner}>
             <div className={styles.containerMax}>
@@ -30,7 +69,26 @@ export default function HeroBanner() {
                                 <span>Forex Trading Simplified</span>
                             </button>
                         </div>
-                        <h2>Optimize Operations with Our CRM</h2>
+                        <Slider {...settings}>
+                            <div className={styles.Component}>
+                                <h2>Optimize Operations with Our CRM</h2>
+                            </div>
+                            <div className={styles.Component}>
+                                <h2>Obtain Your Forex Broker Licence</h2>
+                            </div>
+                            <div className={styles.Component}>
+                                <h2>Trade Batter, Samrter, Faster</h2>
+                            </div>
+                            <div className={styles.Component}>
+                                <h2>Optimize Operations with Our CRM</h2>
+                            </div>
+                            <div className={styles.Component}>
+                                <h2>Obtain Your Forex Broker Licence</h2>
+                            </div>
+                            <div className={styles.Component}>
+                                <h2>Trade Batter, Samrter, Faster</h2>
+                            </div>
+                        </Slider>
                         <p>Streamline your client management and enhance efficiency with our tailored CRM solutions. Designed specifically for Forex brokers to help you stay organized and boost performance.</p>
                         <div className={styles.contactButton2}>
                             <button><span>Get Started</span><ArrowSmallRight /></button>
