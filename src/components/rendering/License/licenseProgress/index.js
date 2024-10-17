@@ -10,9 +10,9 @@ import bookIcon from "@/assets/images/svg/bookIcon.svg";
 
 export default function LicenseProgress({ progressHead, proccesFirst, proccesSecond, proccesThird, proccesFourth, proccesFifth }) {
     return (
-        <section className={styles.mauritiusProgress}>
+        <section className={styles.licenseProgress}>
             <div className={styles.container}>
-                <div className={styles.mauritiusProgressDetail}>
+                <div className={styles.licenseProgressDetail}>
                     <div className={styles.headingBatch}>
                         <button type="button" >
                             <Image src={buttonFx} alt="buttonFx" />

@@ -8,9 +8,9 @@ import listIcon from "@/assets/images/svg/listIcon.svg";
 
 export default function LicenseProcess({ processHead, processPera }) {
     return (
-        <section className={styles.mauritiusProcess}>
+        <section className={styles.licenseProcess}>
             <div className={styles.containerMax}>
-                <div className={styles.mauritiusProcessDetail}>
+                <div className={styles.licenseProcessDetail}>
                     <div className={styles.headingBatch}>
                         <button type="button" >
                             <Image src={buttonFx} alt="buttonFx" />

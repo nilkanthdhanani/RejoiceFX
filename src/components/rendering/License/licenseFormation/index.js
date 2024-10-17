@@ -6,11 +6,11 @@ import buttonFx from "@/assets/images/svg/buttonFx.svg";
 
 export default function LicenseFormation({ startImage, startButton, startTitle, startSubTitle }) {
     return (
-        <section className={styles.mauritiusFormation}>
+        <section className={styles.licenseFormation}>
             <div className={styles.container}>
                 <div className={styles.formationGrid}>
                     <div className={styles.formationGridImg}>
-                        <Image src={startImage} alt="mauritiusFormation" />
+                        <Image src={startImage} alt="startImage" />
                     </div>
                     <div className={styles.formationGridDiv}>
                         <div className={styles.headingBatch}>

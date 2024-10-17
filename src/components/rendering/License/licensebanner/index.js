@@ -8,19 +8,19 @@ import buttonFx from "@/assets/images/svg/buttonFx.svg";
 
 export default function LicenseBanner({ bannerButton, bannerTitle, bannerSubTitle }) {
     return (
-        <section className={styles.mauritiusBanner}>
+        <section className={styles.licenseBanner}>
             <div className={styles.containerMax}>
-                <div className={styles.mauritiusBannerinner}>
-                    <div className={styles.mauritiusBannerbottom}>
+                <div className={styles.licenseBannerinner}>
+                    <div className={styles.licenseBannerbottom}>
                         <Image src={bannerBottomLines} alt="bannerBottomLines" />
                     </div>
-                    <div className={styles.mauritiusBannerLineRight}>
+                    <div className={styles.licenseBannerLineRight}>
                         <Image src={rightLayer} alt="rightLayer" />
                     </div>
-                    <div className={styles.mauritiusBannerLineLeft}>
+                    <div className={styles.licenseBannerLineLeft}>
                         <Image src={leftLayer} alt="leftLayer" />
                     </div>
-                    <div className={styles.mauritiusBannerDetail}>
+                    <div className={styles.licenseBannerDetail}>
                         <div className={styles.headingBatch}>
                             <button type="button" >
                                 <Image src={buttonFx} alt="buttonFx" />

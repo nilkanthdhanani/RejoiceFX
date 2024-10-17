@@ -1,7 +1,7 @@
 @import "../../../../assets/styles/main.scss";
 
-.mauritiusBanner {
-    .mauritiusBannerinner {
+.licenseBanner {
+    .licenseBannerinner {
         width: 100%;
         padding: 100px 30px 150px 30px;
         background-color: #e6edff;
@@ -11,7 +11,7 @@
         justify-content: center;
         overflow: hidden;
 
-        .mauritiusBannerbottom {
+        .licenseBannerbottom {
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -21,22 +21,22 @@
             }
         }
 
-        .mauritiusBannerLineRight,
-        .mauritiusBannerLineLeft {
+        .licenseBannerLineRight,
+        .licenseBannerLineLeft {
             position: absolute;
             top: 0;
             height: 100%;
         }
 
-        .mauritiusBannerLineRight {
+        .licenseBannerLineRight {
             right: 8%;
         }
 
-        .mauritiusBannerLineLeft {
+        .licenseBannerLineLeft {
             left: 8%;
         }
 
-        .mauritiusBannerDetail {
+        .licenseBannerDetail {
             position: relative;
             max-width: 1174px;
             display: flex;

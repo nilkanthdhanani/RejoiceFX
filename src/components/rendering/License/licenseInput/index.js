@@ -7,7 +7,7 @@ import buttonFx from "@/assets/images/svg/buttonFx.svg";
 
 export default function LicenseInput() {
     return (
-        <section className={styles.mauritiusInput}>
+        <section className={styles.licenseInput}>
             <div className={styles.container}>
                 <div className={styles.inputGrid}>
                     <div className={styles.inputGridDiv}>
