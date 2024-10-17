@@ -7,6 +7,8 @@ import leftLayer from "@/assets/images/svg/leftLayer.svg";
 import rightLayer from "@/assets/images/svg/rightLayer.svg";
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
 import heroBanner from "@/assets/images/png/heroBanner.png";
+import heroBanner2 from "@/assets/images/png/heroBanner2.png";
+import heroBanner3 from "@/assets/images/png/heroBanner3.png";
 import ArrowSmallRight from '@/assets/images/svg/arrowSmallRight';
 
 import "slick-carousel/slick/slick.css";
@@ -33,8 +35,17 @@ function SamplePrevArrow(props) {
     );
 }
 
+const sliderContent = [
+    "Optimize Operations with Our CRM",
+    "Obtain Your Forex Broker Licence",
+    "Trade Better, Smarter, Faster",
+    "Optimize Operations with Our CRM",
+    "Obtain Your Forex Broker Licence",
+    "Trade Better, Smarter, Faster",
+];
+
 export default function HeroBanner() {
-    const settings = {
+    const setting = {
         dots: false,
         infinite: true,
         slidesToShow: 1,
@@ -42,7 +53,20 @@ export default function HeroBanner() {
         vertical: true,
         verticalSwiping: true,
         autoplay: true,
-        speed: 3000,
+        speed: 2000,
+        autoplaySpeed: 3000,
+        pauseOnHover: false,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+    };
+
+    var settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
         autoplaySpeed: 3000,
         pauseOnHover: false,
         nextArrow: <SampleNextArrow />,
@@ -69,25 +93,12 @@ export default function HeroBanner() {
                                 <span>Forex Trading Simplified</span>
                             </button>
                         </div>
-                        <Slider {...settings}>
-                            <div className={styles.Component}>
-                                <h2>Optimize Operations with Our CRM</h2>
-                            </div>
-                            <div className={styles.Component}>
-                                <h2>Obtain Your Forex Broker Licence</h2>
-                            </div>
-                            <div className={styles.Component}>
-                                <h2>Trade Batter, Samrter, Faster</h2>
-                            </div>
-                            <div className={styles.Component}>
-                                <h2>Optimize Operations with Our CRM</h2>
-                            </div>
-                            <div className={styles.Component}>
-                                <h2>Obtain Your Forex Broker Licence</h2>
-                            </div>
-                            <div className={styles.Component}>
-                                <h2>Trade Batter, Samrter, Faster</h2>
-                            </div>
+                        <Slider {...setting}>
+                            {sliderContent.map((text, index) => (
+                                <div key={index} className={styles.heroBannerDetailHead}>
+                                    <h2>{text}</h2>
+                                </div>
+                            ))}
                         </Slider>
                         <p>Streamline your client management and enhance efficiency with our tailored CRM solutions. Designed specifically for Forex brokers to help you stay organized and boost performance.</p>
                         <div className={styles.contactButton2}>
@@ -95,8 +106,23 @@ export default function HeroBanner() {
                             <button><span>Try For Free</span><ArrowSmallRight /></button>
                         </div>
                     </div>
-                    <div className={styles.heroBannerImg}>
+                    {/* <div className={styles.heroBannerImg}>
                         <Image src={heroBanner} alt="heroBanner" />
+                    </div> */}
+                    <div className={styles.sliderMain}>
+                        <div className={styles.sliderContainer}>
+                            <Slider {...settings}>
+                                <div>
+                                    <Image src={heroBanner} alt="heroBanner" />
+                                </div>
+                                <div>
+                                    <Image src={heroBanner2} alt="heroBanner2" />
+                                </div>
+                                <div>
+                                    <Image src={heroBanner3} alt="heroBanner3" />
+                                </div>
+                            </Slider>
+                        </div>
                     </div>
                 </div>
             </div>
