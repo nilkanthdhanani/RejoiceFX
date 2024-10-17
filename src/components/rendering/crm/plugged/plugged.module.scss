@@ -1,0 +1,44 @@
+@import "../../../../assets/styles/main.scss";
+
+.plugged {
+    margin: 120px 0;
+
+    .pluggedDiv {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 30px;
+
+        .pluggedDetail {
+            max-width: 685px;
+
+            h2 {
+                color: #0b0b14;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                margin: 4px 0 16px 0;
+                letter-spacing: -0.01em;
+            }
+
+            p {
+                font-family: "DM sans";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #737373;
+            }
+        }
+
+        .pluggedDivImg {
+            max-width: 840px;
+
+            img {
+                width: 100%;
+                max-height: 550px;
+                border-radius: 24px;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -10,6 +10,7 @@
         margin-bottom: 60px;
 
         h2 {
+            margin-top: 4px;
             color: #0b0b14;
             font-size: 48px;
             font-weight: 600;
@@ -27,6 +28,58 @@
         .projectFaqDivMain {
             .projectFaqDiv {
                 margin-bottom: 22px;
+                padding: 22px 30px 24px 30px;
+                background: #e6edff;
+                border-radius: 18px;
+                position: relative;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+                
+                &.openFaq {
+                    padding: 30px;
+                    background-color: #e6e6ff99;
+                    border: 1px solid #b0b0ff;
+                }
+
+                .projectFaqDivHead {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h2 {
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 26px;
+                        color: #0f0f14;
+                    }
+
+                    img {
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    .rotateIcon {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .faqContent {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: 0.3s ease-in-out;
+
+                    p {
+                        margin-top: 12px;
+                        font-family: "DM sans";
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color: #737373;
+                    }
+                }
+
+                .faqContentOpen {
+                    max-height: 100vh;
+                }
 
                 &:last-child {
                     margin-bottom: 0;
@@ -34,10 +87,12 @@
             }
         }
 
-        img {
-            width: 100%;
-            max-height: 720px;
-            border-radius: 24px;
+        .projectFaqImg {
+            img {
+                width: 100%;
+                max-height: 720px;
+                border-radius: 24px;
+            }
         }
     }
 }
