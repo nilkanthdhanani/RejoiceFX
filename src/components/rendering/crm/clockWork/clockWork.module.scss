@@ -18,15 +18,6 @@
             letter-spacing: -0.01em;
             text-align: center;
         }
-
-        p {
-            font-family: "DM sans";
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 32px;
-            text-align: center;
-            color: #595959;
-        }
     }
 
     .clockWorkBox,
@@ -34,14 +25,17 @@
     .clockWorkBox3 {
         background: #f6f6f8;
         border-radius: 34px;
-        padding: 62px 62px 80px 62px;
+        padding: 62px;
         display: grid;
-        grid-template-columns: 1fr 455px;
+        grid-template-columns: auto 450px;
         align-items: center;
+        justify-content: space-between;
         gap: 30px;
         margin-bottom: 120px;
 
         .clockWorkBoxDetail {
+            max-width: 880px;
+
             h3 {
                 margin-bottom: 12px;
                 font-size: 24px;
@@ -74,8 +68,6 @@
                 margin-top: 59px;
 
                 .clockWorkBoxContent1 {
-                    max-width: 420px;
-
                     .clockWorkBoxImg {
                         width: 80px;
                         height: 80px;
@@ -113,7 +105,6 @@
     }
 
     .clockWorkBox2 {
-        grid-template-columns: 455px 1fr;
-        gap: 145px;
+        grid-template-columns: 450px auto;
     }
 }

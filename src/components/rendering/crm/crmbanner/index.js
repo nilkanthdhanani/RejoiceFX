@@ -32,8 +32,10 @@ export default function CrmBanner() {
                         <h2>Transform Client Management with Forex CRM</h2>
                         <p>This highlights the core purpose of the CRM while making it clear that it's tailored for Forex brokers.</p>
                     </div>
-                    <div className={styles.crmBannerImg}>
-                        <Image src={heroBanner} alt="heroBanner" />
+                    <div className={styles.crmBannerImgDiv}>
+                        <div className={styles.crmBannerImg}>
+                            <Image src={heroBanner} alt="heroBanner" />
+                        </div>
                     </div>
                 </div>
             </div>

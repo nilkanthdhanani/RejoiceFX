@@ -1,7 +1,7 @@
 @import "../../../../assets/styles/main.scss";
 
 .brokerage {
-    padding: 120px 130px 88px 120px;
+    padding: 120px 30px;
     margin-bottom: 270px;
     border-radius: 34px;
     background-color: #014eff;
@@ -18,63 +18,40 @@
         }
     }
 
-    .brokerageHead {
-        max-width: 650px;
-        position: relative;
-        z-index: 2;
+    .brokerageDiv {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        
+        .brokerageHead {
+            flex: 1;
+            max-width: 650px;
+            position: relative;
+            z-index: 2;
 
-        h2 {
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 64px;
-            letter-spacing: -0.01em;
-            color: #ffffff;
-            margin-bottom: 46px;
-        }
-
-        .inputBoxButton {
-            margin-top: 46px;
-
-            button {
-                padding: 18px 28px;
-                border: 2px solid transparent;
-                border-radius: 40px;
-                background-color: #ffffff;
-                display: flex;
-                align-items: center;
-                gap: 6px;
-                font-family: Helvetica Now Text;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 26px;
-                color: #014eff;
-                cursor: pointer;
-                transition: 0.3s ease-in-out;
-
-                svg {
-                    fill: #014eff;
-                    transition: 0.3s ease-in-out;
-                }
-
-                &:hover {
-                    background-color: transparent;
-                    border: 2px solid #ffffff;
-                    color: #ffffff;
-                    transition: all 0.3s ease-in-out;
-
-                    svg {
-                        fill: #ffffff;
-                        transform: translateX(6px);
-                        transition: all 0.3s ease-in-out;
-                    }
-                }
+            h2 {
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 64px;
+                letter-spacing: -0.01em;
+                color: #ffffff;
+                margin-bottom: 46px;
             }
         }
-    }
 
-    .brokerageImgae {
-        position: absolute;
-        right: 130px;
-        bottom: -150px;
+        .brokerageImgae {
+            flex: 1;
+            max-width: 840px;
+            min-height: 600px;
+            margin-bottom: -270px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                max-height: 600px;
+                object-fit: cover;
+                border-radius: 24px;
+            }
+        }
     }
 }

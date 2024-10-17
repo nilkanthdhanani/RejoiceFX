@@ -1,0 +1,160 @@
+@import "../../../../../assets/styles/main.scss";
+
+.brokerageHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+
+    h2 {
+        max-width: 1212px;
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 70px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        margin-top: 12px;
+    }
+}
+
+.crmSystem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-bottom: 115px;
+
+    .crmSystemBox {
+        padding: 40px;
+        border-radius: 22px;
+        background: rgba(176, 200, 255, 0.2);
+
+        .crmSystemIcon {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 30px;
+
+            .clockWorkBoxImg {
+                width: 80px;
+                height: 80px;
+                background: rgba(230, 237, 255, 0.3);
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                img {
+                    position: absolute;
+                }
+            }
+
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #fff;
+            }
+        }
+
+        .ProcessContentList {
+            .ProcessContentListDiv {
+                display: flex;
+                gap: 14px;
+                margin-bottom: 18px;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                p {
+                    font-family: "DM sans";
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    color: #e6e6e6;
+                }
+            }
+        }
+    }
+}
+
+.rateDiv {
+    padding: 0 38px 20px 40px;
+    margin: 0 40px;
+    border-bottom: 1px solid #b0c8ff;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .rateDivBox {
+        width: 100%;
+        max-width: 290px;
+
+        h4 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: "DM sans";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #dbdbdd;
+        }
+    }
+
+    .rateDivBoxLine {
+        border-right: 1px solid #b0c8ff;
+    }
+}
+
+.teamDiv {
+    position: relative;
+    z-index: 1;
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    h2 {
+        max-width: 644px;
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 64px;
+        letter-spacing: -0.01em;
+    }
+
+    .teamDivList {
+        display: flex;
+        gap: 70px;
+
+        .teamDivListBox {
+            h5 {
+                margin-bottom: 10px;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 64px;
+                letter-spacing: -0.01em;
+                color: #fff;
+            }
+
+            p {
+                font-family: "DM sans";
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 35px;
+                letter-spacing: -0.01em;
+                color: #fff;
+                max-width: 205px;
+            }
+        }
+    }
+}
