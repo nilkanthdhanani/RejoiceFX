@@ -17,4 +17,19 @@
             object-fit: cover;
         }
     }
+
+    .crmBannerLineRight,
+    .crmBannerLineLeft {
+        position: absolute;
+        top: 0;
+        height: 100%;
+    }
+
+    .crmBannerLineRight {
+        right: 8%;
+    }
+
+    .crmBannerLineLeft {
+        left: 8%;
+    }
 }

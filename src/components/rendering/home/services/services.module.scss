@@ -1,29 +1,29 @@
 @import "../../../../assets/styles/main.scss";
 
-.Services {
-    .ServicesInner {
+.services {
+    .servicesInner {
         width: 100%;
         padding: 120px 30px;
         background-color: #f1f2f4;
         border-radius: 34px;
         position: relative;
 
-        .ServicesLineRight,
-        .ServicesLineLeft {
+        .servicesLineRight,
+        .servicesLineLeft {
             position: absolute;
             top: 0;
             height: 100%;
         }
 
-        .ServicesLineRight {
+        .servicesLineRight {
             right: 8%;
         }
 
-        .ServicesLineLeft {
+        .servicesLineLeft {
             left: 8%;
         }
 
-        .ServicesDetail {
+        .servicesDetail {
             position: relative;
             max-width: 1174px;
             margin: 0 auto 60px auto;
@@ -51,13 +51,13 @@
             }
         }
 
-        .ServicesGrid {
+        .servicesGrid {
             position: relative;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 50px;
 
-            .ServicesGridBox {
+            .servicesGridBox {
                 height: 100%;
                 padding: 30px;
                 background-color: #fff;
@@ -67,7 +67,7 @@
                 flex-direction: column;
                 justify-content: space-between;
 
-                .ServicesGridBox1 {
+                .servicesGridBox1 {
                     padding: 10px 10px 30px 10px;
 
                     span {
@@ -101,6 +101,8 @@
 
                 img {
                     width: 100%;
+                    max-height: 270px;
+                    border-radius: 20px;
                 }
             }
         }

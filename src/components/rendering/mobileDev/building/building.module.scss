@@ -1,0 +1,45 @@
+@import "../../../../assets/styles/main.scss";
+
+.building {
+    margin: 120px 0;
+
+    .buildingDiv {
+        display: grid;
+        grid-template-columns: 1fr 50%;
+        align-items: center;
+        gap: 30px;
+
+        .buildingDivImg {
+            max-width: 700px;
+
+            img {
+                width: 100%;
+                max-height: 550px;
+                border-radius: 24px;
+                object-fit: cover;
+            }
+        }
+
+        .buildingDetail {
+            max-width: 800px;
+
+            h2 {
+                color: #0b0b14;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                margin: 4px 0 16px 0;
+                letter-spacing: -0.01em;
+            }
+
+            p {
+                font-family: "DM sans";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                color: #737373;
+                margin-bottom: 45px;
+            }
+        }
+    }
+}

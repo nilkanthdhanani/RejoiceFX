@@ -5,12 +5,25 @@
     background: #f6f6f8;
     border-radius: 34px;
     padding: 85px 30px;
+    position: relative;
+
+    .contactBannerbottom {
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        width: calc(100% - 20px);
+
+        img {
+            object-fit: cover;
+        }
+    }
 
     .savingsDiv {
+        position: relative;
+        z-index: 1;
         display: grid;
         grid-template-columns: 1fr auto;
         align-items: center;
-        justify-content: space-between;
         gap: 30px;
 
         .savingsDetail {

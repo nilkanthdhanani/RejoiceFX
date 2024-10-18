@@ -1,0 +1,168 @@
+@import "../../../../assets/styles/main.scss";
+
+.ecoSystem {
+    margin: 120px 0;
+
+    .ecoSystemDetail {
+        position: relative;
+        max-width: 868px;
+        margin: 0 auto 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: #0b0b14;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: -0.01em;
+            text-align: center;
+            margin: 4px 0 0 0;
+        }
+    }
+
+    .ecoSystemProcess {
+        .pathImage {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .pathImageLineTop {
+                padding: 40px 1px 40px 0;
+                background-color: #bfbfbf;
+            }
+
+            .pathImageLine {
+                width: calc(100% - 500px);
+                padding: 15px;
+                border-top: 1px solid #bfbfbf;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    content: "";
+                    height: 100%;
+                    width: 1px;
+                    background-color: #bfbfbf;
+                }
+
+                &::before {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    content: "";
+                    height: 100%;
+                    width: 1px;
+                    background-color: #bfbfbf;
+                }
+            }
+        }
+
+        .ecoProcessBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+
+            .ecoProcessBox1 {
+                .tradingTracker {
+                    margin-bottom: 50px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px 0;
+
+                    .tradingTrackerBox {
+                        position: relative;
+                        user-select: none;
+                        flex: 1;
+                        min-width: 130px;
+
+                        .tracker {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 2px;
+                                background-color: #014eff;
+                            }
+
+                            .trackerIcon {
+                                position: relative;
+                                z-index: 1;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background-color: #014eff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    height: 10px;
+                                    width: 2px;
+                                    background-color: #fff;
+                                }
+                            }
+                        }
+
+                        span {
+                            display: block;
+                            margin: 12px 12px 0 12px;
+                            text-align: center;
+                            font-family: "poppins";
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 19px;
+                            letter-spacing: -0.01em;
+                            color: #595959;
+                        }
+
+                        &:first-child {
+                            &::after {
+                                position: absolute;
+                                top: 0;
+                                content: "";
+                                height: 30px;
+                                width: 2px;
+                                background-color: #014eff;
+                            }
+                        }
+
+                        &:last-child {
+                            &::before {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                content: "";
+                                height: 30px;
+                                width: 2px;
+                                background-color: #014eff;
+                            }
+                        }
+                    }
+                }
+
+                h3 {
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    letter-spacing: -0.01em;
+                    color: #0f0f1a;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

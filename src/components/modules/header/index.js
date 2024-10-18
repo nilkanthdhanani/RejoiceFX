@@ -24,12 +24,12 @@ const botDropBox = [
   {
     name: "AI bot development",
     details: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    link: "/",
+    link: "/algo-bot",
   },
   {
     name: "Strategies",
     details: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    link: "/",
+    link: "/algo-bot",
   },
 ];
 
@@ -37,12 +37,12 @@ const serviceDropBox = [
   {
     name: "AI Web/ Mobile Development",
     details: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    link: "/",
+    link: "/mobile-development",
   },
   {
-    name: "AI Web/ Mobile Development",
+    name: "AI Development",
     details: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    link: "/",
+    link: "/ai-development",
   },
 ];
 

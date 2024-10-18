@@ -1,0 +1,62 @@
+@import "../../../../assets/styles/main.scss";
+
+.boost {
+    margin: 120px 0;
+
+    .boostDiv {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: start;
+        gap: 30px;
+
+        .boostDetail {
+            max-width: 750px;
+
+            h2 {
+                color: #0b0b14;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                margin: 4px 0 16px 0;
+                letter-spacing: -0.01em;
+            }
+
+            p {
+                font-family: "DM sans";
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #737373;
+            }
+        }
+
+        .boostGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+
+            .boostGridBox {
+                padding: 30px;
+                background: #e6e6e633;
+                border: 1px solid #b0c8ff;
+                border-radius: 22px;
+
+                h3 {
+                    margin: 10px 0 30px 0;
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    color: #014eff;
+                }
+
+                p {
+                    font-family: "Poppins";
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    color: #0f0f1a;
+                }
+            }
+        }
+    }
+}

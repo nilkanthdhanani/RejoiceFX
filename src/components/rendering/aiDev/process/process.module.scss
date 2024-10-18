@@ -1,0 +1,150 @@
+@import "../../../../assets/styles/main.scss";
+
+.process {
+    .processInner {
+        width: 100%;
+        padding: 120px 30px;
+        background-color: #f1f2f4;
+        border-radius: 34px;
+        position: relative;
+
+        .processLineRight,
+        .processLineLeft {
+            position: absolute;
+            top: 0;
+            height: 100%;
+        }
+
+        .processLineRight {
+            right: 8%;
+        }
+
+        .processLineLeft {
+            left: 8%;
+        }
+
+        .processDetail {
+            position: relative;
+            max-width: 962px;
+            margin: 0 auto 50px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                color: #0b0b14;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                text-align: center;
+                margin: 4px 0 16px 0;
+            }
+
+            p {
+                font-family: "DM sans";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                color: #737373;
+                text-align: center;
+            }
+        }
+    }
+
+    .processDiv {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 0;
+
+        .processDivBox {
+            .tracker {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #bfbfbf;
+                }
+
+                .trackerIcon {
+                    position: relative;
+                    z-index: 1;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #014eff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: "Poppins";
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: -0.01em;
+                    color: #fff;
+                }
+            }
+
+            &:first-child {
+                .tracker {
+                    &::before {
+                        position: absolute;
+                        top: 10px;
+                        left: 0;
+                        content: "";
+                        height: 30px;
+                        width: 1px;
+                        background-color: #bfbfbf;
+                    }
+                }
+            }
+
+            &:last-child {
+                .tracker {
+                    &::before {
+                        position: absolute;
+                        top: 10px;
+                        right: 0;
+                        content: "";
+                        height: 30px;
+                        width: 1px;
+                        background-color: #bfbfbf;
+                    }
+                }
+            }
+
+            .processDivContent {
+                max-width: 350px;
+                margin: 0 20px;
+
+                h3 {
+                    margin: 20px 0 10px 0;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    letter-spacing: -0.01em;
+                    text-align: center;
+                    color: #0f0f1a;
+                }
+
+                p {
+                    font-family: "DM sans";
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #737373;
+                }
+            }
+        }
+    }
+}

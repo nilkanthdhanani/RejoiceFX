@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
 import savingImg from "@/assets/images/png/savingImg.png";
+import bannerBottomLines from "@/assets/images/svg/bannerBottomLines.svg";
 
 export default function Savings() {
     return (
@@ -42,6 +43,9 @@ export default function Savings() {
                                 <Image src={savingImg} alt="savingImg" />
                             </div>
                         </div>
+                    </div>
+                    <div className={styles.contactBannerbottom}>
+                        <Image src={bannerBottomLines} alt="bannerBottomLines" />
                     </div>
                 </div>
             </div>

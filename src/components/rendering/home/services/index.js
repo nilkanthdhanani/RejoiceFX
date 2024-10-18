@@ -12,16 +12,16 @@ import services3 from "@/assets/images/png/services3.png";
 
 export default function Services() {
     return (
-        <section className={styles.Services}>
+        <section className={styles.services}>
             <div className={styles.containerMax}>
-                <div className={styles.ServicesInner}>
-                    <div className={styles.ServicesLineRight}>
+                <div className={styles.servicesInner}>
+                    <div className={styles.servicesLineRight}>
                         <Image src={rightLayer} alt="rightLayer" />
                     </div>
-                    <div className={styles.ServicesLineLeft}>
+                    <div className={styles.servicesLineLeft}>
                         <Image src={leftLayer} alt="leftLayer" />
                     </div>
-                    <div className={styles.ServicesDetail}>
+                    <div className={styles.servicesDetail}>
                         <div className={styles.headingBatch}>
                             <button type="button" >
                                 <Image src={buttonFx} alt="buttonFx" />
@@ -32,10 +32,10 @@ export default function Services() {
                         <p>Unlock comprehensive solutions to enhance your Forex brokerage with cutting-edge technology and expert support.</p>
                     </div>
                     <div className={styles.container}>
-                        <div className={styles.ServicesGrid}>
+                        <div className={styles.servicesGrid}>
                             <Link href={"/forex-crm"}>
-                                <div className={styles.ServicesGridBox}>
-                                    <div className={styles.ServicesGridBox1}>
+                                <div className={styles.servicesGridBox}>
+                                    <div className={styles.servicesGridBox1}>
                                         <span>01</span>
                                         <h3>CRM</h3>
                                         <p>Manage clients and streamline operations with a CRM designed specifically for Forex businesses.</p>
@@ -44,8 +44,8 @@ export default function Services() {
                                 </div>
                             </Link>
                             <Link href={"/forex-licence-mauritius"}>
-                                <div className={styles.ServicesGridBox}>
-                                    <div className={styles.ServicesGridBox1}>
+                                <div className={styles.servicesGridBox}>
+                                    <div className={styles.servicesGridBox1}>
                                         <span>02</span>
                                         <h3>Licenses</h3>
                                         <p>Obtain your Forex broker license seamlessly in jurisdictions like Mauritius and St. Lucia with our expert guidance.</p>
@@ -54,8 +54,8 @@ export default function Services() {
                                 </div>
                             </Link>
                             <Link href={"/algo-bot"}>
-                                <div className={styles.ServicesGridBox}>
-                                    <div className={styles.ServicesGridBox1}>
+                                <div className={styles.servicesGridBox}>
+                                    <div className={styles.servicesGridBox1}>
                                         <span>03</span>
                                         <h3>Algo Bot</h3>
                                         <p>Automate your trading strategies using intelligent bots that execute trades based on real-time market analysis.</p>

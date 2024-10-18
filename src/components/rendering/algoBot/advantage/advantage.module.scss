@@ -1,0 +1,91 @@
+@import "../../../../assets/styles/main.scss";
+
+.advantage {
+    .advantageInner {
+        width: 100%;
+        padding: 120px 30px;
+        background-color: #f1f2f4;
+        border-radius: 34px;
+        position: relative;
+
+        .advantageLineRight,
+        .advantageLineLeft {
+            position: absolute;
+            top: 0;
+            height: 100%;
+        }
+
+        .advantageLineRight {
+            right: 8%;
+        }
+
+        .advantageLineLeft {
+            left: 8%;
+        }
+
+        .advantageDetail {
+            position: relative;
+            max-width: 1174px;
+            margin: 0 auto 60px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                color: #0b0b14;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                text-align: center;
+                margin: 4px 0 0 0;
+            }
+        }
+
+        .advantageGrid {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+
+            .advantageGridBox {
+                height: 100%;
+                padding: 30px;
+                background-color: #fff;
+                border: 1px solid #b0c8ff;
+                border-radius: 30px;
+
+                .progressGridBoxImg {
+                    width: 97px;
+                    height: 97px;
+                    background-color: #e6edff;
+                    border-radius: 50px;
+                    border: 1px solid #b0c8ff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    img {
+                        max-width: 50px;
+                    }
+                }
+
+                h3 {
+                    margin: 24px 0 11px 0;
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    color: #0f0f1a;
+                }
+
+                p {
+                    font-family: "Dm sans";
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    color: #737373;
+                }
+            }
+        }
+    }
+}

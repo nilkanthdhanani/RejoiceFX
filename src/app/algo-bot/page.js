@@ -1,8 +1,10 @@
+"use client"
+import AlgoBotPage from "@/components/rendering/algoBot"
 
 export default function AlgoBot() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <AlgoBotPage />
+    </>
   )
 }

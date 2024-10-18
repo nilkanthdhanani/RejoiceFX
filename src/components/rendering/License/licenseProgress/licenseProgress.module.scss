@@ -63,10 +63,9 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                position: relative;
 
                 img {
-                    position: absolute;
+                    max-width: 50px;
                 }
             }
 

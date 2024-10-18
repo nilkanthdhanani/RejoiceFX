@@ -32,18 +32,18 @@ export default function Footer() {
             <span>Links</span>
             <div className={styles.footerDiv2Main}>
               <div className={styles.footerDiv2Link}>
-                <Link href={"/"}>Forex Licenses</Link>
-                <Link href={"/"}>AI bot development</Link>
-                <Link href={"/"}>Mauritius Forex License</Link>
-                <Link href={"/"}>Strategies</Link>
-                <Link href={"/"}>St. Vincent Forex License</Link>
+                <Link href={"/forex-licence-mauritius"}>Forex Licenses</Link>
+                <Link href={"/ai-development"}>AI bot development</Link>
+                <Link href={"/forex-licence-mauritius"}>Mauritius Forex License</Link>
+                <Link href={"/algo-bot"}>Strategies</Link>
+                <Link href={"/forex-licence-vincent"}>St. Vincent Forex License</Link>
               </div>
               <div className={styles.footerDiv2Link}>
-                <Link href={"/"}>Forex Services</Link>
-                <Link href={"/"}>Forex CRM</Link>
-                <Link href={"/"}>AI Web/ Mobile Development</Link>
-                <Link href={"/"}>Algo Bot & Strategies</Link>
-                <Link href={"/"}>Contact Us</Link>
+                <Link href={"/ai-development"}>Forex Services</Link>
+                <Link href={"/forex-crm"}>Forex CRM</Link>
+                <Link href={"/mobile-development"}>AI Web/ Mobile Development</Link>
+                <Link href={"/algo-bot"}>Algo Bot & Strategies</Link>
+                <Link href={"/contactus"}>Contact Us</Link>
               </div>
             </div>
           </div>

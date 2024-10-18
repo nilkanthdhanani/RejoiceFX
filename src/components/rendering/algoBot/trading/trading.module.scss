@@ -1,0 +1,42 @@
+@import "../../../../assets/styles/main.scss";
+
+.trading {
+    margin: 120px 0;
+
+    .tradingDiv {
+        display: grid;
+        grid-template-columns: 40% auto;
+        justify-content: space-between;
+        gap: 30px;
+
+        .tradingDivImg {
+            img {
+                width: 100%;
+                max-height: 670px;
+                border-radius: 30px;
+                object-fit: cover;
+            }
+        }
+
+        .tradingDetail {
+            max-width: 840px;
+
+            h2 {
+                margin: 4px 0 16px 0;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                color: #0b0b14;
+            }
+
+            p {
+                font-family: "DM sans";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                color: #737373;
+            }
+        }
+    }
+}
