@@ -37,3 +37,13 @@ a {
 textarea {
     resize: none;
 }
+
+.no-scroll {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.no-scroll::-webkit-scrollbar {
+    background: #fff;
+}

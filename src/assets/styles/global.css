@@ -69,8 +69,3 @@ strong {
 .cursorGrab{
   cursor: grab;
 }
-
-.no-scroll {
-  overflow: hidden;
-}
-
