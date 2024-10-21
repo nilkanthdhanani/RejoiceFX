@@ -20,7 +20,7 @@ export default function LicenseProgress({ progressHead, proccesFirst, proccesSec
                         </button>
                     </div>
                     <h2>{progressHead}</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
                 <div className={styles.progressGrid}>
                     <div className={styles.progressGridBox}>

@@ -7,13 +7,13 @@ import tadingIcon2 from '@/assets/images/svg/tadingIcon2.svg';
 const tadingDetails = [
   {
     image: tadingIcon1,
-    title: "Lorem Ipsum is simply",
+    title: "Lorem Ipsum is simply",
     month: "20-30 Days",
     cost: "$2,000.00",
   },
   {
     image: tadingIcon2,
-    title: "Lorem Ipsum is simply",
+    title: "Lorem Ipsum is simply",
     month: "30-45 Days",
     cost: "$4,800.00",
   },

@@ -37,14 +37,14 @@ export default function ClockWork() {
                                     <Image src={clockWorkIco1} alt="clockWorkIco1" />
                                 </div>
                                 <h4>Seamless Data Integration with Web API</h4>
-                                <p>Powerful Web API allows getting direct data retrieval from trading platforms through our system for various reporting purposes</p>
+                                <p>Powerful Web API allows getting direct data retrieval from trading platforms through our system for various reporting purposes</p>
                             </div>
                             <div className={styles.clockWorkBoxContent1}>
                                 <div className={styles.clockWorkBoxImg}>
                                     <Image src={clockWorkIco2} alt="clockWorkIco2" />
                                 </div>
                                 <h4>Interface Design with React and Angular</h4>
-                                <p>Cutting-edge design frameworks like React and Angular get you the most of your interface</p>
+                                <p>Cutting-edge design frameworks like React and Angular get you the most of your interface</p>
                             </div>
                         </div>
                     </div>
@@ -65,14 +65,14 @@ export default function ClockWork() {
                                     <Image src={clockWorkIco3} alt="clockWorkIco3" />
                                 </div>
                                 <h4>Client-Focused Solutions Since 2014</h4>
-                                <p>Client-oriented since 2014. We offer user-friendly solutions with helpful guides and educational sessions to easily work with our products</p>
+                                <p>Client-oriented since 2014.We offer user-friendly solutions with helpful guides and educational sessions to easily work with our products</p>
                             </div>
                             <div className={styles.clockWorkBoxContent1}>
                                 <div className={styles.clockWorkBoxImg}>
                                     <Image src={clockWorkIco4} alt="clockWorkIco4" />
                                 </div>
                                 <h4>Advanced Architecture</h4>
-                                <p>Experience unparalleled stability with our product. By leveraging Docker, microservices, and advanced architecture, we deliver seamless integration and reliable performance</p>
+                                <p>Experience unparalleled stabilitywith our product. By leveraging Docker, microservices, and advanced architecture, we deliver seamless integration and reliable performance</p>
                             </div>
                         </div>
                     </div>
@@ -80,21 +80,21 @@ export default function ClockWork() {
                 <div className={styles.clockWorkBox3}>
                     <div className={styles.clockWorkBoxDetail}>
                         <h3><span>03</span>Secure</h3>
-                        <p>We value our reputation & long-term relations. Your funds are safe with us</p>
+                        <p>We value our reputation &long-term relations. Your funds aresafe with us</p>
                         <div className={styles.clockWorkBoxContent}>
                             <div className={styles.clockWorkBoxContent1}>
                                 <div className={styles.clockWorkBoxImg}>
                                     <Image src={clockWorkIco5} alt="clockWorkIco5" />
                                 </div>
                                 <h4>Automated Monitoring</h4>
-                                <p>Each client's setup has a dedicated server with fully automated monitoring system to track the uptime of your production environment</p>
+                                <p>Each client's setup has adedicated server with fully automated monitoring systemtotrack the uptime of your production environment</p>
                             </div>
                             <div className={styles.clockWorkBoxContent1}>
                                 <div className={styles.clockWorkBoxImg}>
                                     <Image src={clockWorkIco6} alt="clockWorkIco6" />
                                 </div>
                                 <h4>2FA and User Management</h4>
-                                <p>Our support department monitors any potential errors and resolves them quickly and effectively</p>
+                                <p>Our support department monitors any potential errorsand resolves them quickly andeffectively</p>
                             </div>
                         </div>
                     </div>

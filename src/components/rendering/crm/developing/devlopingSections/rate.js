@@ -13,7 +13,7 @@ export default function Rate() {
                         <span>Rate</span>
                     </button>
                 </div>
-                <h2>Costs start at $200k per month, excluding taxes, infrastructure, equipment, and licenses. Total for 2 years: $5 million</h2>
+                <h2>Costs start at $200k per month, excluding taxes, infrastructure, equipment, and licenses. Total for 2years: $5 million</h2>
             </div>
             <div className={styles.rateDiv}>
                 <div className={styles.rateDivBox}>
