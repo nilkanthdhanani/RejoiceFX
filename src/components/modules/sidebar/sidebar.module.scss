@@ -33,6 +33,11 @@
 
                 img {
                     display: block;
+
+                    @include breakpoint("sm-max") {
+                        max-width: 150px;
+                        height: auto;
+                    }
                 }
             }
         }

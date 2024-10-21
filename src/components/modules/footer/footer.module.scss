@@ -23,6 +23,10 @@ footer {
                 margin: 42px 0 30px 0;
                 display: flex;
                 gap: 30px;
+
+                @include breakpoint("sm-max") {
+                    flex-wrap: wrap;
+                }
             }
 
             .footerDiv1DetailsBox {

@@ -223,6 +223,8 @@
             gap: 40px;
 
             @include breakpoint("sm-max") {
+                flex-wrap: wrap;
+                gap: 20px;
                 width: 100%;
                 justify-content: space-between;
             }

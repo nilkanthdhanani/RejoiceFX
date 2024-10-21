@@ -200,6 +200,7 @@
 
         @include breakpoint("sm-max") {
             padding: 7px 10px;
+            width: auto;
         }
         
         span {
@@ -210,6 +211,10 @@
             line-height: 20px;
             color: #0b0b14;
             white-space: nowrap;
+
+            @include breakpoint("sm-max") {
+                white-space: normal;
+            }
         }
     }
 }
@@ -228,6 +233,7 @@
 
         @include breakpoint("sm-max") {
             padding: 7px 10px;
+            width: auto;
         }
         
         span {
@@ -238,6 +244,10 @@
             line-height: 20px;
             color: #fff;
             white-space: nowrap;
+
+            @include breakpoint("sm-max") {
+                white-space: normal;
+            }
         }
     }
 }

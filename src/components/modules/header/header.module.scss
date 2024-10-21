@@ -20,6 +20,11 @@
         .logo {
             img {
                 display: block;
+
+                @include breakpoint("sm-max") {
+                    max-width: 150px;
+                    height: auto;
+                }
             }
         }
 
@@ -161,6 +166,10 @@
 
                 @include breakpoint("lg-max") {
                     display: block;
+                }
+
+                @include breakpoint("sm-max") {
+                    top: 15px;
                 }
 
                 .ham {
