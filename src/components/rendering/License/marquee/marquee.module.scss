@@ -5,10 +5,19 @@
     border-radius: 34px;
     background-color: #f1f2f4;
 
+    @include breakpoint("sm-max") {
+        border-radius: 20px;
+        padding: 70px 0;
+    }
+
     .marqueeDivHead {
         display: flex;
         justify-content: center;
         margin-bottom: 70px;
+        
+        @include breakpoint("sm-max") {
+            margin-bottom: 30px;
+        }
 
         h2 {
             font-size: 48px;
@@ -16,6 +25,11 @@
             line-height: 70px;
             letter-spacing: -0.01em;
             color: #0b0b14;
+
+            @include breakpoint("sm-max") {
+                font-size: 30px;
+                line-height: 42px;
+            }
         }
     }
 
