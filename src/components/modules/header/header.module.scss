@@ -8,6 +8,10 @@
     z-index: 9;
     padding: 27px 0;
 
+    @include breakpoint("sm-max") {
+        padding: 20px 0;
+    }
+
     .headerDiv {
         display: flex;
         justify-content: space-between;
@@ -139,6 +143,12 @@
         .contactMenu {
             @include breakpoint("lg-max") {
                 margin-right: 55px;
+            }
+
+            .contactButton {
+                @include breakpoint("sm-max") {
+                    display: none;
+                }
             }
 
             .menuIcon {

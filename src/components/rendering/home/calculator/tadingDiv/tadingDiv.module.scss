@@ -9,12 +9,24 @@
         letter-spacing: -0.01em;
         color: #0f0f1a;
         margin-bottom: 40px;
+
+        @include breakpoint("sm-max") {
+            margin-bottom: 20px;
+        }
     }
 
     .tadingDivGrid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 26px;
+
+        @include breakpoint ("lg-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         .tadingDivGridBox {
             background-color: #e6edff;

@@ -4,8 +4,17 @@ footer {
     .footerDiv {
         display: flex;
         justify-content: space-between;
-        gap: 50px 30px;
+        gap: 60px 30px;
         margin-bottom: 36px;
+
+        @include breakpoint ("lg-max") {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("md-max") {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         .footerDiv1 {
             max-width: 425px;
@@ -53,6 +62,10 @@ footer {
             .footerDiv2Main {
                 display: flex;
                 gap: 50px;
+
+                @include breakpoint("sm-max") {
+                    flex-wrap: wrap;
+                }
 
                 .footerDiv2Link {
                     display: flex;

@@ -19,12 +19,21 @@
         cursor: pointer;
         transition: 0.3s ease-in-out;
 
+        @include breakpoint("sm-max") {
+            padding: 8px 17px;
+        }
+
         span {
             font-family: "DM sans";
             font-size: 18px;
             font-weight: 500;
             line-height: 26px;
             white-space: nowrap;
+
+            @include breakpoint("sm-max") {
+                font-size: 16px;
+                line-height: 24px;
+            }
         }
 
         svg {
@@ -51,6 +60,12 @@
     display: flex;
     gap: 30px;
     align-items: center;
+
+    @include breakpoint("sm-max") {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     button {
         &:nth-child(2) {
@@ -88,12 +103,21 @@
         cursor: pointer;
         transition: 0.3s ease-in-out;
 
+        @include breakpoint("sm-max") {
+            padding: 8px 17px;
+        }
+
         span {
             font-family: "DM sans";
             font-size: 18px;
             font-weight: 500;
             line-height: 26px;
             white-space: nowrap;
+
+            @include breakpoint("sm-max") {
+                font-size: 16px;
+                line-height: 24px;
+            }
         }
 
         svg {
@@ -173,6 +197,10 @@
         background: rgba(230, 230, 255, 0.8);
         border: 1px solid #b0b0ff;
         border-radius: 40px;
+
+        @include breakpoint("sm-max") {
+            padding: 7px 10px;
+        }
         
         span {
             text-transform: uppercase;
@@ -197,6 +225,10 @@
         background: rgba(176, 200, 255, 0.2);
         border: 1px solid #b0b0ff;
         border-radius: 40px;
+
+        @include breakpoint("sm-max") {
+            padding: 7px 10px;
+        }
         
         span {
             text-transform: uppercase;

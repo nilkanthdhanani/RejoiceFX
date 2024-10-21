@@ -3,12 +3,21 @@
 .heroBanner {
     margin-bottom: 400px;
 
+    @include breakpoint("sm-max") {
+        margin-bottom: 270px;
+    }
+
     .heroBannerinner {
         width: 100%;
         padding: 100px 30px 400px 30px;
         background-color: #e6edff;
         border-radius: 34px;
         position: relative;
+
+        @include breakpoint("sm-max") {
+            padding: 50px 20px 200px 20px;
+            border-radius: 20px;
+        }
 
         .heroBannerbottom {
             position: absolute;
@@ -37,11 +46,17 @@
         }
 
         .heroBannerDetail {
+            position: relative;
+            z-index: 1;
             max-width: 1174px;
             margin: 0 auto 50px auto;
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include breakpoint("sm-max") {
+                margin: 0 0 30px 0;
+            }
 
             .heroBannerDetailHead {
                 h2 {
@@ -52,6 +67,11 @@
                     line-height: 77px;
                     letter-spacing: -0.01em;
                     text-align: center;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 40px;
+                        line-height: 45px;
+                    }
                 }
             }
 
@@ -63,27 +83,14 @@
                 line-height: 32px;
                 text-align: center;
                 color: #595959;
+
+                @include breakpoint("sm-max") {
+                    font-size: 16px;
+                    line-height: 25px;
+                    margin: 10px 0 20px 0;
+                }
             }
         }
-
-        // .heroBannerImg {
-        //     position: absolute;
-        //     width: calc(100% - 60px);
-        //     display: flex;
-        //     justify-content: center;
-        //     bottom: -270px;
-
-        //     img {
-        //         width: 100%;
-        //         max-height: 670px;
-        //         max-width: 1030px;
-        //         object-fit: cover;
-        //         object-position: 0 0;
-        //         border-radius: 20px;
-        //         border: 6px solid #d9e4ff;
-        //         box-shadow: 0px 4px 54px 0px #014eff24;
-        //     }
-        // }
 
         .sliderMain {
             display: flex;
@@ -98,12 +105,20 @@
                 box-shadow: 0px 4px 54px 0px #014eff24;
                 border-radius: 20px;
 
+                @include breakpoint("sm-max") {
+                    width: calc(100% - 40px);
+                }
+
                 img {
                     display: block;
                     width: 100%;
                     max-height: 670px;
                     object-fit: cover;
                     object-position: 0 0;
+
+                    @include breakpoint("sm-max") {
+                        max-height: 400px;
+                    }
                 }
             }
         }

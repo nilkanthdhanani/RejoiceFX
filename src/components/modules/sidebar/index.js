@@ -5,6 +5,7 @@ import logo from '@/assets/images/svg/logo.svg';
 import angleDown from '@/assets/images/svg/angleDown.svg';
 import Image from "next/image";
 import { useState } from "react";
+import ArrowSmallRight from "@/assets/images/svg/arrowSmallRight";
 
 export default function Sidebar({ isOpen, closeSidebar }) {
   const [openSection, setOpenSection] = useState(null);
@@ -74,6 +75,12 @@ export default function Sidebar({ isOpen, closeSidebar }) {
               <Link href={"/ai-development"} onClick={handleLinkClick}><span>AI Web/ Mobile Development</span></Link>
               <Link href={"/mobile-development"} onClick={handleLinkClick}><span>AI Development</span></Link>
             </div>
+          </div>
+
+          <div className={styles.contactButton}>
+            <Link href={"/contactus"}>
+              <button type="submit"><span>Contact Us</span><ArrowSmallRight /></button>
+            </Link>
           </div>
         </div>
       </div>

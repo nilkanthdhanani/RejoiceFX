@@ -21,17 +21,17 @@ export default function Services() {
                     <div className={styles.servicesLineLeft}>
                         <Image src={leftLayer} alt="leftLayer" />
                     </div>
-                    <div className={styles.servicesDetail}>
-                        <div className={styles.headingBatch}>
-                            <button type="button" >
-                                <Image src={buttonFx} alt="buttonFx" />
-                                <span>Services</span>
-                            </button>
-                        </div>
-                        <h2>Services Tailored for Forex Success</h2>
-                        <p>Unlock comprehensive solutions to enhance your Forex brokerage with cutting-edge technology and expert support.</p>
-                    </div>
                     <div className={styles.container}>
+                        <div className={styles.servicesDetail}>
+                            <div className={styles.headingBatch}>
+                                <button type="button" >
+                                    <Image src={buttonFx} alt="buttonFx" />
+                                    <span>Services</span>
+                                </button>
+                            </div>
+                            <h2>Services Tailored for Forex Success</h2>
+                            <p>Unlock comprehensive solutions to enhance your Forex brokerage with cutting-edge technology and expert support.</p>
+                        </div>
                         <div className={styles.servicesGrid}>
                             <Link href={"/forex-crm"}>
                                 <div className={styles.servicesGridBox}>

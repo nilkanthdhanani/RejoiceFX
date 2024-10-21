@@ -1,0 +1,66 @@
+@import "../../../../assets/styles/main.scss";
+
+.building {
+    margin: 120px 0;
+
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
+    .buildingDiv {
+        display: grid;
+        grid-template-columns: 1fr 40%;
+        justify-content: space-between;
+        gap: 30px;
+
+        @include breakpoint ("lg-max") {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .buildingDetail {
+            max-width: 840px;
+
+            h2 {
+                margin: 4px 0 16px 0;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 70px;
+                letter-spacing: -0.01em;
+                color: #0b0b14;
+
+                @include breakpoint("sm-max") {
+                    font-size: 36px;
+                    line-height: 42px;
+                    margin: 4px 0 10px 0;
+                }
+            }
+
+            p {
+                font-family: "DM sans";
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 32px;
+                color: #737373;
+
+                @include breakpoint("sm-max") {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .buildingDivImg {
+            img {
+                width: 100%;
+                max-height: 670px;
+                border-radius: 30px;
+                object-fit: cover;
+
+                @include breakpoint("sm-max") {
+                    max-height: 400px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}

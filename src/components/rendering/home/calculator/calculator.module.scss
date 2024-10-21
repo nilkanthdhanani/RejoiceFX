@@ -3,6 +3,10 @@
 .calculator {
     margin: 120px 0;
 
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
     .calculatorHead {
         position: relative;
         max-width: 1174px;
@@ -10,6 +14,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include breakpoint("sm-max") {
+            margin: 0 0 30px 0;
+        }
 
         h2 {
             color: #0b0b14;
@@ -19,6 +27,12 @@
             letter-spacing: -0.01em;
             text-align: center;
             margin: 4px 0 0 0;
+
+            @include breakpoint("sm-max") {
+                font-size: 36px;
+                line-height: 42px;
+                margin: 4px 0 0 0;
+            }
         }
     }
 
@@ -33,6 +47,10 @@
             user-select: none;
             flex: 1;
             min-width: 145px;
+
+            @include breakpoint("sm-max") {
+                min-width: 100px;
+            }
 
             .tracker {
                 display: flex;
@@ -79,6 +97,11 @@
                 line-height: 19px;
                 letter-spacing: -0.01em;
                 color: #595959;
+
+                @include breakpoint("sm-max") {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
             }
 
             &:first-child {
@@ -141,6 +164,15 @@
             justify-content: center;
             user-select: none;
 
+            @include breakpoint("sm-max") {
+                width: 30px;
+                height: 30px;
+
+                img {
+                    width: 14px;
+                }
+            }
+
             &.disabled {
                 cursor: no-drop;
                 opacity: 0.5;
@@ -170,6 +202,12 @@
         justify-content: space-between;
         align-items: center;
 
+        @include breakpoint("sm-max") {
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
         p {
             font-family: "DM sans";
             font-size: 26px;
@@ -183,6 +221,11 @@
             display: flex;
             align-items: center;
             gap: 40px;
+
+            @include breakpoint("sm-max") {
+                width: 100%;
+                justify-content: space-between;
+            }
 
             h6 {
                 font-family: "DM sans";
