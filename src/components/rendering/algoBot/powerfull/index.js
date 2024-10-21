@@ -33,9 +33,9 @@ const powerfullDetail = [
 
 export default function Powerfull() {
     return (
-        <section className={styles.advantage}>
+        <section className={styles.powerfull}>
             <div className={styles.container}>
-                <div className={styles.advantageDetail}>
+                <div className={styles.powerfullDetail}>
                     <div className={styles.headingBatch}>
                         <button type="button" >
                             <Image src={buttonFx} alt="buttonFx" />
@@ -44,9 +44,9 @@ export default function Powerfull() {
                     </div>
                     <h2>Simply Connect Your Trading with Powerful Algorithms</h2>
                 </div>
-                <div className={styles.advantageGrid}>
+                <div className={styles.powerfullGrid}>
                     {powerfullDetail.map((item, index) => (
-                        <div key={index} className={styles.advantageGridBox}>
+                        <div key={index} className={styles.powerfullGridBox}>
                             <div className={styles.progressGridBoxImg}>
                                 <Image src={item.image} alt={item.image} />
                             </div>

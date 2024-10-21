@@ -54,8 +54,18 @@
                 align-items: center;
                 justify-content: center;
 
+                @include breakpoint("sm-max") {
+                    width: 70px;
+                    height: 70px;
+                }
+
                 img {
                     max-width: 50px;
+
+                    @include breakpoint("sm-max") {
+                        max-width: 35px;
+                        height: auto;
+                    }
                 }
             }
 

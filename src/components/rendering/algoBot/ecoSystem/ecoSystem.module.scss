@@ -3,6 +3,10 @@
 .ecoSystem {
     margin: 120px 0;
 
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
     .ecoSystemDetail {
         position: relative;
         max-width: 868px;
@@ -10,6 +14,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include breakpoint("sm-max") {
+            margin: 0 0 30px 0;
+        }
 
         h2 {
             color: #0b0b14;
@@ -19,6 +27,11 @@
             letter-spacing: -0.01em;
             text-align: center;
             margin: 4px 0 0 0;
+
+            @include breakpoint("sm-max") {
+                font-size: 30px;
+                line-height: 42px;
+            }
         }
     }
 
@@ -28,6 +41,10 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
+
+            @include breakpoint("lg-max") {
+                display: none;
+            }
 
             .pathImageLineTop {
                 padding: 40px 1px 40px 0;
@@ -68,6 +85,10 @@
             align-items: center;
             gap: 30px;
 
+            @include breakpoint("lg-max") {
+                flex-direction: column;
+            }
+
             .ecoProcessBox1 {
                 .tradingTracker {
                     margin-bottom: 50px;
@@ -75,11 +96,19 @@
                     flex-wrap: wrap;
                     gap: 20px 0;
 
+                    @include breakpoint("sm-max") {
+                        margin-bottom: 0;
+                    }
+
                     .tradingTrackerBox {
                         position: relative;
                         user-select: none;
                         flex: 1;
                         min-width: 130px;
+
+                        @include breakpoint("sm-max") {
+                            min-width: auto;
+                        }
 
                         .tracker {
                             display: flex;
@@ -161,6 +190,14 @@
                     letter-spacing: -0.01em;
                     color: #0f0f1a;
                     text-align: center;
+
+                    span {
+                        display: none;
+
+                        @include breakpoint("lg-max") {
+                            display: inline-block;
+                        }
+                    }
                 }
             }
         }

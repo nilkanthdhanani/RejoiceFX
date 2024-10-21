@@ -35,7 +35,7 @@ export default function EcoSystem() {
                     </div>
                     <div className={styles.ecoProcessBox}>
                         <div className={styles.ecoProcessBox1}>
-                            <h3>Trader Connects with <br /> RoboTrader</h3>
+                            <h3><span>01.</span> Trader Connects with <br /> RoboTrader</h3>
                             <div className={styles.tradingTracker}>
                                 {tracker.map((item, index) => (
                                     <div className={styles.tradingTrackerBox} key={index}>
@@ -48,7 +48,7 @@ export default function EcoSystem() {
                             </div>
                         </div>
                         <div className={styles.ecoProcessBox1}>
-                            <h3>End to End Automation - <br /> Sending orders to Exchange</h3>
+                            <h3><span>02.</span> End to End Automation - <br /> Sending orders to Exchange</h3>
                             <div className={styles.tradingTracker}>
                                 {tracker2.map((item, index) => (
                                     <div className={styles.tradingTrackerBox} key={index}>

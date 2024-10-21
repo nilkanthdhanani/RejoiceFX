@@ -6,13 +6,31 @@
     border-radius: 34px;
     padding: 85px 30px;
 
+    @include breakpoint("lg-max") {
+        padding: 50px 20px;
+    }
+
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+        padding: 30px 0;
+        border-radius: 20px;
+    }
+
     .hireDiv {
         display: grid;
         grid-template-columns: 1fr auto;
         gap: 30px;
 
+        @include breakpoint("lg-max"){
+            grid-template-columns: 1fr;
+        }
+
         .hireDivMain {
             max-width: 770px;
+
+            @include breakpoint("lg-max") {
+                max-width: none;
+            }
 
             h2 {
                 color: #0b0b14;
@@ -21,6 +39,12 @@
                 line-height: 58px;
                 margin: 4px 0 26px 0;
                 letter-spacing: -0.01em;
+
+                @include breakpoint("sm-max") {
+                    font-size: 30px;
+                    line-height: 42px;
+                    margin: 4px 0 30px 0;
+                }
             }
 
             .hireDetail {
@@ -38,6 +62,10 @@
                     gap: 20px;
                     align-items: center;
 
+                    @include breakpoint("sm-max") {
+                        grid-template-columns: 40px 1fr;
+                    }
+
                     .hireDetailIcon {
                         height: 60px;
                         border-radius: 50%;
@@ -47,8 +75,16 @@
                         align-items: center;
                         justify-content: center;
 
+                        @include breakpoint("sm-max") {
+                            height: 40px;
+                        }
+
                         img {
                             max-width: 36px;
+
+                            @include breakpoint("sm-max") {
+                                max-width: 24px;
+                            }
                         }
                     }
 
@@ -68,6 +104,12 @@
                     font-weight: 400;
                     line-height: 32px;
                     color: #737373;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 16px;
+                        line-height: 25px;
+                        margin: 12px 0 20px 0;
+                    }
                 }
             }
         }
@@ -75,11 +117,19 @@
         .hireDivImg {
             max-width: 640px;
 
+            @include breakpoint("lg-max") {
+                max-width: none;
+            }
+
             img {
                 max-height: 640px;
                 width: 100%;
                 border-radius: 30px;
                 object-fit: cover;
+
+                @include breakpoint("sm-max") {
+                    max-height: 400px;
+                }
             }
         }
     }

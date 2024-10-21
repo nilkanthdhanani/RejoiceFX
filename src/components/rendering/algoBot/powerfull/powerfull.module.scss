@@ -1,15 +1,23 @@
 @import "../../../../assets/styles/main.scss";
 
-.advantage {
+.powerfull {
     margin: 120px 0;
 
-    .advantageDetail {
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
+    .powerfullDetail {
         position: relative;
         max-width: 868px;
         margin: 0 auto 60px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include breakpoint("sm-max") {
+            margin: 0 0 30px 0;
+        }
 
         h2 {
             color: #0b0b14;
@@ -19,21 +27,42 @@
             letter-spacing: -0.01em;
             text-align: center;
             margin: 4px 0 0 0;
+
+            @include breakpoint("sm-max") {
+                font-size: 30px;
+                line-height: 42px;
+            }
         }
     }
 
-    .advantageGrid {
+    .powerfullGrid {
         position: relative;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 35px;
 
-        .advantageGridBox {
+        @include breakpoint("lg-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: 1fr;
+        }
+
+        @include breakpoint("sm-max") {
+            gap: 30px;
+        }
+
+        .powerfullGridBox {
             height: 100%;
             padding: 30px;
             background: #E6E6E633;
             border: 1px solid #b0c8ff;
             border-radius: 30px;
+
+            @include breakpoint("sm-max") {
+                padding: 20px;
+            }
 
             .progressGridBoxImg {
                 width: 97px;
@@ -45,8 +74,18 @@
                 align-items: center;
                 justify-content: center;
 
+                @include breakpoint("sm-max") {
+                    width: 70px;
+                    height: 70px;
+                }
+
                 img {
                     max-width: 50px;
+
+                    @include breakpoint("sm-max") {
+                        max-width: 35px;
+                        height: auto;
+                    }
                 }
             }
 
@@ -56,6 +95,12 @@
                 font-weight: 500;
                 line-height: 32px;
                 color: #0f0f1a;
+
+                @include breakpoint("sm-max") {
+                    font-size: 20px;
+                    line-height: 28px;
+                    margin: 10px 0 5px 0;
+                }
             }
 
             p {
@@ -64,6 +109,11 @@
                 font-weight: 400;
                 line-height: 32px;
                 color: #737373;
+
+                @include breakpoint("sm-max") {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
             }
         }
     }
