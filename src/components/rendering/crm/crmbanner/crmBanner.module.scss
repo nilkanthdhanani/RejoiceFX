@@ -3,12 +3,21 @@
 .crmBanner {
     margin-bottom: 400px;
 
+    @include breakpoint("sm-max") {
+        margin-bottom: 270px;
+    }
+
     .crmBannerinner {
         width: 100%;
         padding: 100px 30px 400px 30px;
         background-color: #e6edff;
         border-radius: 34px;
         position: relative;
+
+        @include breakpoint("sm-max") {
+            padding: 50px 20px 200px 20px;
+            border-radius: 20px;
+        }
 
         .crmBannerbottom {
             position: absolute;
@@ -43,6 +52,10 @@
             flex-direction: column;
             align-items: center;
 
+            @include breakpoint("sm-max") {
+                margin: 0 0 30px 0;
+            }
+
             h2 {
                 color: #0b0b14;
                 font-size: 64px;
@@ -51,6 +64,13 @@
                 letter-spacing: -0.01em;
                 text-align: center;
                 margin: 4px 0 16px 0;
+
+                @include breakpoint("sm-max") {
+                    font-size: 40px;
+                    line-height: 45px;
+                    margin: 4px 0 10px 0;
+                    word-break: break-word;
+                }
             }
 
             p {
@@ -60,6 +80,11 @@
                 line-height: 32px;
                 text-align: center;
                 color: #595959;
+
+                @include breakpoint("sm-max") {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
             }
         }
 
@@ -81,6 +106,10 @@
                     border-radius: 20px;
                     border: 6px solid #d9e4ff;
                     box-shadow: 0px 4px 54px 0px #014eff24;
+
+                    @include breakpoint("sm-max") {
+                        max-height: 400px;
+                    }
                 }
             }
         }

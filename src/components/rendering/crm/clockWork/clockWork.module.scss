@@ -3,12 +3,20 @@
 .clockWork {
     margin: 120px 0;
 
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
     .clockWorkDetail {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 60px;
+
+        @include breakpoint("sm-max") {
+            margin-bottom: 30px;
+        }
 
         h2 {
             color: #0b0b14;
@@ -17,6 +25,11 @@
             line-height: 70px;
             letter-spacing: -0.01em;
             text-align: center;
+
+            @include breakpoint("sm-max") {
+                font-size: 30px;
+                line-height: 42px;
+            }
         }
     }
 
@@ -33,6 +46,29 @@
         gap: 30px;
         margin-bottom: 120px;
 
+        @include breakpoint("lg-max") {
+            grid-template-columns: 1fr;
+        }
+
+        @include breakpoint("sm-max") {
+            padding: 30px 20px;
+            margin-bottom: 60px;
+            border-radius: 20px;
+        }
+
+        .clockWorkBoxImg {
+            @include breakpoint("lg-max") {
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                @include breakpoint("sm-max") {
+                    max-height: 400px;
+                }
+            }
+        }
+
         .clockWorkBoxDetail {
             max-width: 880px;
 
@@ -46,11 +82,22 @@
                 align-items: center;
                 gap: 26px;
 
+                @include breakpoint("sm-max") {
+                    font-size: 20px;
+                    line-height: 25px;
+                    gap: 20px;
+                }
+
                 span {
                     font-size: 50px;
                     font-weight: 300;
                     line-height: 60px;
                     color: #cccccc;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 40px;
+                        line-height: 45px;
+                    }
                 }
             }
 
@@ -60,12 +107,26 @@
                 font-weight: 400;
                 line-height: 29px;
                 color: #737373;
+
+                @include breakpoint("sm-max") {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
             }
 
             .clockWorkBoxContent {
                 display: flex;
                 gap: 40px;
                 margin-top: 59px;
+
+                @include breakpoint("md-max") {
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+
+                @include breakpoint("sm-max") {
+                    margin: 40px 0;
+                }
 
                 .clockWorkBoxContent1 {
                     .clockWorkBoxImg {
@@ -79,8 +140,18 @@
                         justify-content: center;
                         position: relative;
 
+                        @include breakpoint("sm-max") {
+                            width: 60px;
+                            height: 60px;
+                        }
+
                         img {
                             position: absolute;
+
+                            @include breakpoint("sm-max") {
+                                max-width: 30px;
+                                height: auto;
+                            }
                         }
                     }
 
@@ -90,6 +161,10 @@
                         font-weight: 500;
                         line-height: 30px;
                         color: #0b0b14;
+
+                        @include breakpoint("sm-max") {
+                            margin-top: 10px;
+                        }
                     }
 
                     p {
@@ -98,6 +173,10 @@
                         font-weight: 400;
                         line-height: 30px;
                         color: #737373;
+
+                        @include breakpoint("sm-max") {
+                            line-height: 25px;
+                        }
                     }
                 }
             }
@@ -106,5 +185,13 @@
 
     .clockWorkBox2 {
         grid-template-columns: 450px auto;
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: 1fr;
+
+            .clockWorkBoxImg {
+                order: 2;
+            }
+        }
     }
 }

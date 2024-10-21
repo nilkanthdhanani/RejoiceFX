@@ -3,11 +3,19 @@
 .plugged {
     margin: 120px 0;
 
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
     .pluggedDiv {
         display: grid;
         grid-template-columns: 1fr 53%;
         align-items: center;
         gap: 30px;
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: 1fr;
+        }
 
         .pluggedDetail {
             max-width: 685px;
@@ -19,6 +27,12 @@
                 line-height: 70px;
                 margin: 4px 0 16px 0;
                 letter-spacing: -0.01em;
+
+                @include breakpoint("sm-max"){
+                    font-size: 30px;
+                    line-height: 42px;
+                    margin: 4px 0 10px 0;
+                }
             }
 
             p {
@@ -27,17 +41,30 @@
                 font-weight: 400;
                 line-height: 30px;
                 color: #737373;
+
+                @include breakpoint("sm-max"){
+                    font-size: 16px;
+                    line-height: 24px;
+                }
             }
         }
 
         .pluggedDivImg {
             max-width: 840px;
 
+            @include breakpoint("lg-max") {
+                max-width: none;
+            }
+
             img {
                 width: 100%;
                 max-height: 550px;
                 border-radius: 24px;
                 object-fit: cover;
+
+                @include breakpoint("sm-max"){
+                    max-height: 400px;
+                }
             }
         }
     }

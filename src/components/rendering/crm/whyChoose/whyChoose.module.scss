@@ -3,11 +3,19 @@
 .whyChoose {
     margin: 120px 0;
 
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
     .whyChooseHead {
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-bottom: 60px;
+
+        @include breakpoint("sm-max") {
+            margin-bottom: 30px;
+        }
 
         h2 {
             color: #0b0b14;
@@ -17,6 +25,11 @@
             letter-spacing: -0.01em;
             margin-top: 4px;
             text-align: center;
+
+            @include breakpoint("sm-max") {
+                font-size: 30px;
+                line-height: 42px;
+            }
         }
     }
 
@@ -26,13 +39,34 @@
         align-items: start;
         gap: 50px;
 
+        @include breakpoint("lg-max") {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: normal;
+        }
+
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+        }
+
+        @include breakpoint("sm-max") {
+            gap: 30px;
+        }
+
         .whyChooseGridBox {
             background: #e6edff;
             padding: 40px 40px 30px 40px;
             border-radius: 22px;
 
+            @include breakpoint("sm-max") {
+                padding: 20px;
+            }
+
             &:nth-child(2) {
                 margin-top: 80px;
+
+                @include breakpoint("lg-max") {
+                    margin-top: 0;
+                }
             }
 
             .whyChooseBoxHead {
@@ -40,6 +74,11 @@
                 align-items: center;
                 gap: 30px;
                 margin-bottom: 30px;
+
+                @include breakpoint("sm-max") {
+                    margin-bottom: 20px;
+                    gap: 20px;
+                }
 
                 span {
                     font-family: "Poppins";
@@ -54,6 +93,10 @@
                     font-weight: 500;
                     line-height: 24px;
                     color: #0f0f1a;
+
+                    @include breakpoint("sm-max") {
+                        word-break: break-word;
+                    }
                 }
             }
 
@@ -74,6 +117,11 @@
                     font-weight: 400;
                     line-height: 29.4px;
                     color: #737373;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
                 }
             }
         }

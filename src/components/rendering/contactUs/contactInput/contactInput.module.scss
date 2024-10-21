@@ -35,7 +35,7 @@
                 color: #0b0b14;
 
                 @include breakpoint("sm-max") {
-                    font-size: 36px;
+                    font-size: 30px;
                     line-height: 42px;
                 }
             }
@@ -48,7 +48,7 @@
 
                 @include breakpoint("sm-max") {
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 25px;
                 }
             }
         }
@@ -80,7 +80,6 @@
 
                     @include breakpoint("sm-max") {
                         font-size: 16px;
-                        line-height: 24px;
                         margin-bottom: 10px;
                     }
                 }

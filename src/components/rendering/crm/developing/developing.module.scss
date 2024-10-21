@@ -7,6 +7,16 @@
     background-color: #014eff;
     position: relative;
 
+    @include breakpoint("lg-max") {
+        padding: 50px 20px;
+    }
+
+    @include breakpoint("sm-max") {
+        padding: 30px 0;
+        margin: 60px 0;
+        border-radius: 20px;
+    }
+
     .contactBannerbottom {
         position: absolute;
         left: 10px;

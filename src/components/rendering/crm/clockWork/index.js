@@ -12,18 +12,19 @@ import clockWorkIco4 from "@/assets/images/svg/clockWorkIco4.svg";
 import clockWorkIco5 from "@/assets/images/svg/clockWorkIco5.svg";
 import clockWorkIco6 from "@/assets/images/svg/clockWorkIco6.svg";
 
+
 export default function ClockWork() {
     return (
 
         <section className={styles.clockWork}>
             <div className={styles.container}>
                 <div className={styles.clockWorkDetail}>
-                        <div className={styles.headingBatch}>
-                            <button type="button" >
-                                <Image src={buttonFx} alt="buttonFx" />
-                                <span>Work Process</span>
-                            </button>
-                        </div>
+                    <div className={styles.headingBatch}>
+                        <button type="button" >
+                            <Image src={buttonFx} alt="buttonFx" />
+                            <span>Work Process</span>
+                        </button>
+                    </div>
                     <h2>Works like a clock</h2>
                 </div>
                 <div className={styles.clockWorkBox}>
@@ -47,10 +48,14 @@ export default function ClockWork() {
                             </div>
                         </div>
                     </div>
-                    <Image src={clockWork1} alt="clockWork1" />
+                    <div className={styles.clockWorkBoxImg}>
+                        <Image src={clockWork1} alt="clockWork1" />
+                    </div>
                 </div>
                 <div className={styles.clockWorkBox2}>
-                    <Image src={clockWork2} alt="clockWork2" />
+                    <div className={styles.clockWorkBoxImg}>
+                        <Image src={clockWork2} alt="clockWork2" />
+                    </div>
                     <div className={styles.clockWorkBoxDetail}>
                         <h3><span>02</span>Reliable</h3>
                         <p>Not just a word to us. Meticulous testing and well-thought architecture are highly prioritised</p>
@@ -93,7 +98,9 @@ export default function ClockWork() {
                             </div>
                         </div>
                     </div>
-                    <Image src={clockWork3} alt="clockWork3" />
+                    <div className={styles.clockWorkBoxImg}>
+                        <Image src={clockWork3} alt="clockWork3" />
+                    </div>
                 </div>
             </div>
         </section>

@@ -18,6 +18,10 @@
             border-radius: 20px;
         }
 
+        @include breakpoint("sm-max") {
+            padding: 30px 0;
+        }
+
         .tradingLine {
             position: absolute;
             right: 110px;
@@ -68,7 +72,7 @@
                     margin: 8px 0 16px 0;
 
                     @include breakpoint("sm-max") {
-                        font-size: 36px;
+                        font-size: 30px;
                         line-height: 42px;
                         margin: 8px 0 10px 0;
                     }

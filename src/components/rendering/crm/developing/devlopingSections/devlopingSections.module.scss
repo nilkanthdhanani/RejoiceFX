@@ -1,10 +1,16 @@
 @import "../../../../../assets/styles/main.scss";
 
 .brokerageHead {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+
+    @include breakpoint("sm-max") {
+        margin-bottom: 30px;
+    }
 
     h2 {
         max-width: 1212px;
@@ -15,19 +21,40 @@
         letter-spacing: -0.01em;
         text-align: center;
         margin-top: 4px;
+
+        @include breakpoint("sm-max") {
+            font-size: 30px;
+            line-height: 42px;
+        }
     }
 }
 
 .crmSystem {
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     margin-bottom: 115px;
 
+    @include breakpoint("lg-max") {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint("md-max") {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
     .crmSystemBox {
         padding: 40px;
         border-radius: 22px;
         background: rgba(176, 200, 255, 0.2);
+
+        @include breakpoint("sm-max") {
+            padding: 20px;
+        }
 
         .crmSystemIcon {
             display: flex;
@@ -35,6 +62,10 @@
             flex-wrap: wrap;
             gap: 24px;
             margin-bottom: 30px;
+
+            @include breakpoint("sm-max") {
+                margin-bottom: 20px;
+            }
 
             .clockWorkBoxImg {
                 width: 80px;
@@ -46,8 +77,18 @@
                 justify-content: center;
                 position: relative;
 
+                @include breakpoint("sm-max") {
+                    width: 60px;
+                    height: 60px;
+                }
+
                 img {
                     position: absolute;
+
+                    @include breakpoint("sm-max") {
+                        max-width: 30px;
+                        height: auto;
+                    }
                 }
             }
 
@@ -75,6 +116,11 @@
                     font-weight: 400;
                     line-height: 29px;
                     color: #e6e6e6;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
                 }
             }
         }
@@ -82,6 +128,8 @@
 }
 
 .rateDiv {
+    position: relative;
+    z-index: 1;
     padding: 0 38px 20px 40px;
     margin: 0 40px;
     border-bottom: 1px solid #b0c8ff;
@@ -89,9 +137,25 @@
     justify-content: space-between;
     gap: 30px;
 
+    @include breakpoint("lg-max"){
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @include breakpoint("md-max") {
+        padding: 0 0 20px 0;
+        margin: 0 0 40px 0;
+        gap: 20px;
+    }
+
     .rateDivBox {
         width: 100%;
         max-width: 290px;
+
+        @include breakpoint("lg-max") {
+            max-width: none;
+            text-align: center;
+        }
 
         h4 {
             color: #fff;
@@ -112,6 +176,10 @@
 
     .rateDivBoxLine {
         border-right: 1px solid #b0c8ff;
+        
+        @include breakpoint("lg-max") {
+            border-bottom: 1px solid #b0c8ff;
+        }
     }
 }
 
@@ -123,6 +191,14 @@
     justify-content: space-between;
     gap: 30px;
 
+    @include breakpoint("lg-max") {
+        flex-direction: column;
+    }
+
+    @include breakpoint("sm-max") {
+        margin-top: 50px;
+    }
+
     h2 {
         max-width: 644px;
         color: #ffffff;
@@ -130,13 +206,31 @@
         font-weight: 600;
         line-height: 64px;
         letter-spacing: -0.01em;
+
+        @include breakpoint("md-max") {
+            text-align: center;
+        }
+
+        @include breakpoint("sm-max") {
+            font-size: 30px;
+            line-height: 42px;
+        }
     }
 
     .teamDivList {
         display: flex;
         gap: 70px;
 
+        @include breakpoint("md-max")  {
+            flex-direction: column;
+            gap: 30px;
+        }
+
         .teamDivListBox {
+            @include breakpoint("lg-max") {
+                text-align: center;
+            }
+
             h5 {
                 margin-bottom: 10px;
                 font-size: 48px;
@@ -144,6 +238,12 @@
                 line-height: 64px;
                 letter-spacing: -0.01em;
                 color: #fff;
+
+                @include breakpoint("sm-max") {
+                    font-size: 30px;
+                    line-height: 42px;
+                    margin-bottom: 0;
+                }
             }
 
             p {
@@ -154,6 +254,15 @@
                 letter-spacing: -0.01em;
                 color: #fff;
                 max-width: 205px;
+
+                @include breakpoint("md-max") {
+                    max-width: none;
+                }
+
+                @include breakpoint("sm-max") {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
             }
         }
     }
