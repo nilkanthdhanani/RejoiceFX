@@ -3,6 +3,10 @@
 .transform {
     margin: 120px 0;
 
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
     .transformDetail {
         position: relative;
         max-width: 960px;
@@ -10,6 +14,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include breakpoint("sm-max") {
+            margin: 0 0 30px 0;
+        }
 
         h2 {
             max-width: 798px;
@@ -20,6 +28,12 @@
             letter-spacing: -0.01em;
             text-align: center;
             margin: 4px 0 16px 0;
+
+            @include breakpoint("sm-max") {
+                font-size: 30px;
+                line-height: 42px;
+                margin: 4px 0 10px 0;
+            }
         }
 
         p {
@@ -28,6 +42,11 @@
             font-weight: 400;
             line-height: 32px;
             color: #737373;
+
+            @include breakpoint("sm-max") {
+                font-size: 16px;
+                line-height: 25px;
+            }
         }
     }
 
@@ -37,12 +56,24 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 35px;
 
+        @include breakpoint("lg-max") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("md-max") {
+            grid-template-columns: 1fr;
+        }
+
         .transformGridBox {
             height: 100%;
             padding: 30px;
             background: #e6e6e633;
             border: 1px solid #b0c8ff;
             border-radius: 30px;
+
+            @include breakpoint("sm-max") {
+                padding: 20px;
+            }
 
             .progressGridBoxImg {
                 width: 97px;
@@ -75,6 +106,12 @@
                 font-weight: 500;
                 line-height: 32px;
                 color: #0f0f1a;
+
+                @include breakpoint("sm-max") {
+                    font-size: 20px;
+                    line-height: 28px;
+                    margin: 10px 0 5px 0;
+                }
             }
 
             p {
@@ -83,6 +120,11 @@
                 font-weight: 400;
                 line-height: 32px;
                 color: #737373;
+
+                @include breakpoint("sm-max") {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
             }
         }
     }

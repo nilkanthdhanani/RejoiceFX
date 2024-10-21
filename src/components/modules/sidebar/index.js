@@ -72,8 +72,8 @@ export default function Sidebar({ isOpen, closeSidebar }) {
               />
             </div>
             <div className={`${styles.sidebarDivLinkInner} ${openSection === 'forexServices' ? styles.open : ''}`}>
-              <Link href={"/ai-development"} onClick={handleLinkClick}><span>AI Web/ Mobile Development</span></Link>
-              <Link href={"/mobile-development"} onClick={handleLinkClick}><span>AI Development</span></Link>
+              <Link href={"/mobile-development"} onClick={handleLinkClick}><span>AI Web/ Mobile Development</span></Link>
+              <Link href={"/ai-development"} onClick={handleLinkClick}><span>AI Development</span></Link>
             </div>
           </div>
 

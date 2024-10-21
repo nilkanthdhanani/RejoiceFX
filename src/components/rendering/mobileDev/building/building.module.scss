@@ -3,25 +3,46 @@
 .building {
     margin: 120px 0;
 
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
     .buildingDiv {
         display: grid;
         grid-template-columns: 1fr 50%;
         align-items: center;
         gap: 30px;
 
+        @include breakpoint("lg-max") {
+            grid-template-columns: 1fr;
+        }
+
         .buildingDivImg {
             max-width: 700px;
+
+            @include breakpoint("lg-max") {
+                max-width: none;
+                order: 2;
+            }
 
             img {
                 width: 100%;
                 max-height: 550px;
                 border-radius: 24px;
                 object-fit: cover;
+
+                @include breakpoint("sm-max") {
+                    max-height: 400px;
+                }
             }
         }
 
         .buildingDetail {
             max-width: 800px;
+
+            @include breakpoint("lg-max") {
+                max-width: none;
+            }
 
             h2 {
                 color: #0b0b14;
@@ -30,6 +51,12 @@
                 line-height: 70px;
                 margin: 4px 0 16px 0;
                 letter-spacing: -0.01em;
+
+                @include breakpoint("sm-max") {
+                    font-size: 30px;
+                    line-height: 42px;
+                    margin: 4px 0 10px 0;
+                }
             }
 
             p {
@@ -39,6 +66,12 @@
                 line-height: 32px;
                 color: #737373;
                 margin-bottom: 45px;
+
+                @include breakpoint("sm-max") {
+                    font-size: 16px;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                }
             }
         }
     }

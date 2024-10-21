@@ -3,11 +3,19 @@
 .boost {
     margin: 120px 0;
 
+    @include breakpoint("sm-max") {
+        margin: 60px 0;
+    }
+
     .boostDiv {
         display: grid;
         grid-template-columns: 1fr auto;
         align-items: start;
         gap: 30px;
+
+        @include breakpoint("lg-max") {
+            grid-template-columns: 1fr;
+        }
 
         .boostDetail {
             max-width: 750px;
@@ -19,6 +27,12 @@
                 line-height: 70px;
                 margin: 4px 0 16px 0;
                 letter-spacing: -0.01em;
+
+                @include breakpoint("sm-max") {
+                    font-size: 30px;
+                    line-height: 42px;
+                    margin: 4px 0 10px 0;
+                }
             }
 
             p {
@@ -27,6 +41,11 @@
                 font-weight: 400;
                 line-height: 30px;
                 color: #737373;
+
+                @include breakpoint("sm-max") {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
             }
         }
 
@@ -35,11 +54,19 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
 
+            @include breakpoint("sm-max") {
+                grid-template-columns: 1fr;
+            }
+
             .boostGridBox {
                 padding: 30px;
                 background: #e6e6e633;
                 border: 1px solid #b0c8ff;
                 border-radius: 22px;
+
+                @include breakpoint("sm-max") {
+                    padding: 20px;
+                }
 
                 h3 {
                     margin: 10px 0 30px 0;
@@ -47,6 +74,11 @@
                     font-weight: 500;
                     line-height: 48px;
                     color: #014eff;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 30px;
+                        line-height: 42px;
+                    }
                 }
 
                 p {
@@ -55,6 +87,11 @@
                     font-weight: 500;
                     line-height: 32px;
                     color: #0f0f1a;
+
+                    @include breakpoint("sm-max"){
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
                 }
             }
         }
