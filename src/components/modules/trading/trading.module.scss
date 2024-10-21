@@ -23,6 +23,10 @@
             right: 110px;
             top: 0;
 
+            @include breakpoint("lg-max") {
+                right: 30px;
+            }
+
             img {
                 object-fit: cover;
             }
