@@ -39,6 +39,7 @@ export default function TadingDiv6() {
             <div className={styles.tadingDivGridBox} key={index}>
               <div className={styles.tadingBoxRange}>
                 <Image src={tadingDetails.image} alt="tadingIcon1" />
+                <label htmlFor={`tadingOption-${index}`} className={styles.radioLabel}>Select</label>
                 <input type="radio" />
               </div>
               <h4>{tadingDetails.title}</h4>

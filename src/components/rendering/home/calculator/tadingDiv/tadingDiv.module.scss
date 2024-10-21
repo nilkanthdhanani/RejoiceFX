@@ -40,6 +40,13 @@
                 gap: 10px;
                 margin-bottom: 10px;
 
+                label {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    opacity: 0;
+                }
+
                 input {
                     margin: 0;
                     appearance: none;
