@@ -5,9 +5,9 @@ import Image from "next/image";
 import leftLayer from "@/assets/images/svg/leftLayer.svg";
 import rightLayer from "@/assets/images/svg/rightLayer.svg";
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import success1 from "@/assets/images/png/success1.png";
-import success2 from "@/assets/images/png/success2.png";
-import success3 from "@/assets/images/png/success3.png";
+import success1 from "@/assets/images/webp/success1.webp";
+import success2 from "@/assets/images/webp/success2.webp";
+import success3 from "@/assets/images/webp/success3.webp";
 
 export default function Success() {
     return (

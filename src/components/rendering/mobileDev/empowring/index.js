@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
 import listIcon from "@/assets/images/svg/listIcon.svg";
-import empowringImg from "@/assets/images/png/empowringImg.png";
+import empowringImg from "@/assets/images/webp/empowringImg.webp";
 
 export default function Empowring() {
     return (

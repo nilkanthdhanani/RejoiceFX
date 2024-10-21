@@ -3,7 +3,7 @@ import styles from './brokerage.module.scss'
 import Image from "next/image";
 
 import bannerBottomLines from "@/assets/images/svg/bannerBottomLines.svg";
-import brokerageImg from "@/assets/images/png/brokerageImg.png";
+import brokerageImg from "@/assets/images/webp/brokerageImg.webp";
 import ArrowSmallRight from "@/assets/images/svg/arrowSmallRight";
 
 export default function Brokerage() {

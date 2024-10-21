@@ -3,7 +3,7 @@ import styles from './licenseProcess.module.scss'
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import mauritiusLicenseImg from "@/assets/images/png/mauritiusLicenseImg.png";
+import mauritiusLicenseImg from "@/assets/images/webp/mauritiusLicenseImg.webp";
 import listIcon from "@/assets/images/svg/listIcon.svg";
 
 export default function LicenseProcess({ processHead, processPera }) {

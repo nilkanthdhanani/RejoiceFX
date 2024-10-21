@@ -6,7 +6,7 @@ import bannerBottomLines from "@/assets/images/svg/bannerBottomLines.svg";
 import leftLayer from "@/assets/images/svg/leftLayer.svg";
 import rightLayer from "@/assets/images/svg/rightLayer.svg";
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import heroBanner from "@/assets/images/png/heroBanner.png";
+import heroBanner from "@/assets/images/webp/heroBanner.webp";
 
 export default function CrmBanner() {
     return (

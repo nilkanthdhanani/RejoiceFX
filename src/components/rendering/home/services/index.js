@@ -6,9 +6,9 @@ import Image from "next/image";
 import leftLayer from "@/assets/images/svg/leftLayer.svg";
 import rightLayer from "@/assets/images/svg/rightLayer.svg";
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import services1 from "@/assets/images/png/services1.png";
-import services2 from "@/assets/images/png/services2.png";
-import services3 from "@/assets/images/png/services3.png";
+import services1 from "@/assets/images/webp/services1.webp";
+import services2 from "@/assets/images/webp/services2.webp";
+import services3 from "@/assets/images/webp/services3.webp";
 
 export default function Services() {
     return (

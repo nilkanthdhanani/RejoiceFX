@@ -3,8 +3,8 @@ import styles from './developing.module.scss'
 import Image from "next/image";
 
 import bannerBottomLines from "@/assets/images/svg/bannerBottomLines.svg";
-import leftLayerWhite from "@/assets/images/png/leftLayerWhite.png";
-import rightLayerWhite from "@/assets/images/png/rightLayerWhite.png";
+import leftLayerWhite from "@/assets/images/webp/leftLayerWhite.webp";
+import rightLayerWhite from "@/assets/images/webp/rightLayerWhite.webp";
 import CrmSystem from './devlopingSections/crmSystem';
 import Rate from './devlopingSections/rate';
 import Team from './devlopingSections/team';

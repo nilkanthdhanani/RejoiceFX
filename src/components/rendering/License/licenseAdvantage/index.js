@@ -3,7 +3,7 @@ import styles from './licenseAdvantage.module.scss'
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import advantageImg from "@/assets/images/png/advantageImg.png";
+import advantageImg from "@/assets/images/webp/advantageImg.webp";
 import listIcon from "@/assets/images/svg/listIcon.svg";
 
 export default function LicenseAdvantage() {

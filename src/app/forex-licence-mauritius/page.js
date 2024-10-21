@@ -1,7 +1,7 @@
 "use client"
 import LicensePage from "@/components/rendering/License";
 
-import mauritiusFormation from "@/assets/images/png/mauritiusFormation.png";
+import mauritiusFormation from "@/assets/images/webp/mauritiusFormation.webp";
 
 export default function Mauritius() {
     const vincentContent = {

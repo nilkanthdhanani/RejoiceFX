@@ -2,7 +2,7 @@ import styles from './savings.module.scss'
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import savingImg from "@/assets/images/png/savingImg.png";
+import savingImg from "@/assets/images/webp/savingImg.webp";
 import bannerBottomLines from "@/assets/images/svg/bannerBottomLines.svg";
 
 export default function Savings() {

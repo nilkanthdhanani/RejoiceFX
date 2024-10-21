@@ -3,7 +3,7 @@ import styles from "./projects.module.scss";
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import projectBg2 from "@/assets/images/png/projectBg2.png";
+import projectBg2 from "@/assets/images/webp/projectBg2.webp";
 import angleDown from "@/assets/images/svg/angleDown.svg";
 
 const faqDetail = [

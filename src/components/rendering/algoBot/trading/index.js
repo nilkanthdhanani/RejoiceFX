@@ -2,7 +2,7 @@ import styles from './trading.module.scss'
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import tradingImg from "@/assets/images/png/tradingImg.png";
+import tradingImg from "@/assets/images/webp/tradingImg.webp";
 
 export default function Trading() {
     return (

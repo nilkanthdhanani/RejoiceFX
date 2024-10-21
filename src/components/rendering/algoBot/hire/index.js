@@ -2,7 +2,7 @@ import styles from './hire.module.scss'
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import hireImg from "@/assets/images/png/hireImg.png";
+import hireImg from "@/assets/images/webp/hireImg.webp";
 import hireIco1 from "@/assets/images/svg/hireIco1.svg";
 import hireIco2 from "@/assets/images/svg/hireIco2.svg";
 import hireIco3 from "@/assets/images/svg/hireIco3.svg";

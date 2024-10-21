@@ -2,7 +2,7 @@ import styles from './plugged.module.scss'
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import pluggedImg from "@/assets/images/png/pluggedImg.png";
+import pluggedImg from "@/assets/images/webp/pluggedImg.webp";
 
 export default function Plugged() {
     return (

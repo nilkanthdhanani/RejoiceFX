@@ -6,9 +6,9 @@ import bannerBottomLines from "@/assets/images/svg/bannerBottomLines.svg";
 import leftLayer from "@/assets/images/svg/leftLayer.svg";
 import rightLayer from "@/assets/images/svg/rightLayer.svg";
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import heroBanner from "@/assets/images/png/heroBanner.png";
-import heroBanner2 from "@/assets/images/png/heroBanner2.png";
-import heroBanner3 from "@/assets/images/png/heroBanner3.png";
+import heroBanner from "@/assets/images/webp/heroBanner.webp";
+import heroBanner2 from "@/assets/images/webp/heroBanner2.webp";
+import heroBanner3 from "@/assets/images/webp/heroBanner3.webp";
 import ArrowSmallRight from '@/assets/images/svg/arrowSmallRight';
 
 import "slick-carousel/slick/slick.css";
@@ -106,9 +106,6 @@ export default function HeroBanner() {
                             <button><span>Try For Free</span><ArrowSmallRight /></button>
                         </div>
                     </div>
-                    {/* <div className={styles.heroBannerImg}>
-                        <Image src={heroBanner} alt="heroBanner" />
-                    </div> */}
                     <div className={styles.sliderMain}>
                         <div className={styles.sliderContainer}>
                             <Slider {...settings}>

@@ -2,8 +2,8 @@
 import styles from './realTime.module.scss'
 import Image from "next/image";
 
-import leftLayerWhite from "@/assets/images/png/leftLayerWhite.png";
-import rightLayerWhite from "@/assets/images/png/rightLayerWhite.png";
+import leftLayerWhite from "@/assets/images/webp/leftLayerWhite.webp";
+import rightLayerWhite from "@/assets/images/webp/rightLayerWhite.webp";
 import buttonFxWhite from "@/assets/images/svg/buttonFxWhite.svg";
 
 export default function RealTime() {

@@ -2,9 +2,9 @@ import styles from './clockWork.module.scss'
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import clockWork1 from "@/assets/images/png/clockWork1.png";
-import clockWork2 from "@/assets/images/png/clockWork2.png";
-import clockWork3 from "@/assets/images/png/clockWork3.png";
+import clockWork1 from "@/assets/images/webp/clockWork1.webp";
+import clockWork2 from "@/assets/images/webp/clockWork2.webp";
+import clockWork3 from "@/assets/images/webp/clockWork3.webp";
 import clockWorkIco1 from "@/assets/images/svg/clockWorkIco1.svg";
 import clockWorkIco2 from "@/assets/images/svg/clockWorkIco2.svg";
 import clockWorkIco3 from "@/assets/images/svg/clockWorkIco3.svg";

@@ -1,7 +1,7 @@
 "use client"
 import LicensePage from "@/components/rendering/License";
 
-import vincentFormation from "@/assets/images/png/vincentFormation.png";
+import vincentFormation from "@/assets/images/webp/vincentFormation.webp";
 
 export default function Vincent() {
     const vincentContent = {

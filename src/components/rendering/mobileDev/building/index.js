@@ -2,7 +2,7 @@ import styles from './building.module.scss'
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
-import buildingImg2 from "@/assets/images/png/buildingImg2.png";
+import buildingImg2 from "@/assets/images/webp/buildingImg2.webp";
 import ArrowSmallRight from '@/assets/images/svg/arrowSmallRight';
 
 export default function Building() {
