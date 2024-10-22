@@ -40,7 +40,9 @@ export default function Services() {
                                         <h3>CRM</h3>
                                         <p>Manage clients and streamline operations with a CRM designed specifically for Forex businesses.</p>
                                     </div>
-                                    <Image src={services1} alt="services1" />
+                                    <div className={styles.servicesGridBoxImg}>
+                                        <Image src={services1} alt="services1" />
+                                    </div>
                                 </div>
                             </Link>
                             <Link href={"/forex-licence-mauritius"}>
@@ -50,7 +52,9 @@ export default function Services() {
                                         <h3>Licenses</h3>
                                         <p>Obtain your Forex broker license seamlessly in jurisdictions like Mauritius and St. Lucia with our expert guidance.</p>
                                     </div>
-                                    <Image src={services2} alt="services2" />
+                                    <div className={styles.servicesGridBoxImg}>
+                                        <Image src={services2} alt="services2" />
+                                    </div>
                                 </div>
                             </Link>
                             <Link href={"/algo-bot"}>
@@ -60,7 +64,9 @@ export default function Services() {
                                         <h3>Algo Bot</h3>
                                         <p>Automate your trading strategies using intelligent bots that execute trades based on real-time market analysis.</p>
                                     </div>
-                                    <Image src={services3} alt="services3" />
+                                    <div className={styles.servicesGridBoxImg}>
+                                        <Image src={services3} alt="services3" />
+                                    </div>
                                 </div>
                             </Link>
                         </div>

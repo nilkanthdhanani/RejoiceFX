@@ -36,7 +36,6 @@
     .whyChooseGrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        align-items: start;
         gap: 50px;
 
         @include breakpoint("lg-max") {
@@ -56,16 +55,18 @@
             background: #e6edff;
             padding: 40px 40px 30px 40px;
             border-radius: 22px;
+            margin: 0 0 80px 0;
 
             @include breakpoint("sm-max") {
                 padding: 20px;
+                margin: 0;
             }
 
             &:nth-child(2) {
-                margin-top: 80px;
+                margin: 80px 0 0 0;
 
                 @include breakpoint("lg-max") {
-                    margin-top: 0;
+                    margin: 0;
                 }
             }
 

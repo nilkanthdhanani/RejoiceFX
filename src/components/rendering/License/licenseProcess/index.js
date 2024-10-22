@@ -41,11 +41,11 @@ export default function LicenseProcess({ processHead, processPera }) {
                                         </div>
                                         <div className={styles.ProcessContentListDiv}>
                                             <Image src={listIcon} alt="listIcon" />
-                                            <p>Director/Shareholder's Bank Reference Letter</p>
+                                            <p>Director/ Shareholder's Bank Reference Letter</p>
                                         </div>
                                         <div className={styles.ProcessContentListDiv}>
                                             <Image src={listIcon} alt="listIcon" />
-                                            <p>Director/Shareholder's CV</p>
+                                            <p>Director/ Shareholder's CV</p>
                                         </div>
                                     </div>
                                     <div>

@@ -20,6 +20,10 @@
         .boostDetail {
             max-width: 750px;
 
+            @include breakpoint("lg-max") {
+                max-width: none;
+            }
+
             h2 {
                 color: #0b0b14;
                 font-size: 48px;
@@ -88,7 +92,7 @@
                     line-height: 32px;
                     color: #0f0f1a;
 
-                    @include breakpoint("sm-max"){
+                    @include breakpoint("sm-max") {
                         font-size: 20px;
                         line-height: 28px;
                     }

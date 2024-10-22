@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 import buttonFxWhite from "@/assets/images/svg/buttonFxWhite.svg";
 import bannerBottomLines from "@/assets/images/svg/bannerBottomLines.svg";
-import tradingLine from "@/assets/images/webp/tradingLine.webp";
+import tradingLine from "@/assets/images/svg/tradingLine.svg";
 import ArrowSmallRight from '@/assets/images/svg/arrowSmallRight';
 
 export default function Trading() {

@@ -35,15 +35,6 @@ function SamplePrevArrow(props) {
     );
 }
 
-const sliderContent = [
-    "Optimize Operations with Our CRM",
-    "Obtain Your Forex Broker Licence",
-    "Trade Better, Smarter, Faster",
-    "Optimize Operations with Our CRM",
-    "Obtain Your Forex Broker Licence",
-    "Trade Better, Smarter, Faster",
-];
-
 export default function HeroBanner() {
     const setting = {
         dots: false,
@@ -94,11 +85,15 @@ export default function HeroBanner() {
                             </button>
                         </div>
                         <Slider {...setting}>
-                            {sliderContent.map((text, index) => (
-                                <div key={index} className={styles.heroBannerDetailHead}>
-                                    <h2>{text}</h2>
-                                </div>
-                            ))}
+                            <div className={styles.heroBannerDetailHead}>
+                                <h2>Optimize Operations with Our CRM</h2>
+                            </div>
+                            <div className={styles.heroBannerDetailHead}>
+                                <h2>Obtain Your Forex Broker Licence</h2>
+                            </div>
+                            <div className={styles.heroBannerDetailHead}>
+                                <h2>Trade Better, Smarter, Faster</h2>
+                            </div>
                         </Slider>
                         <p>Streamline your client management and enhance efficiency with our tailored CRM solutions. Designed specifically for Forex brokers to help you stay organized and boost performance.</p>
                         <div className={styles.contactButton2}>

@@ -14,22 +14,22 @@ export default function Success() {
         <section className={styles.services}>
             <div className={styles.containerMax}>
                 <div className={styles.servicesInner}>
-                    <div className={styles.servicesLineRight}>
-                        <Image src={rightLayer} alt="rightLayer" />
-                    </div>
-                    <div className={styles.servicesLineLeft}>
-                        <Image src={leftLayer} alt="leftLayer" />
-                    </div>
-                    <div className={styles.servicesDetail}>
-                        <div className={styles.headingBatch}>
-                            <button type="button" >
-                                <Image src={buttonFx} alt="buttonFx" />
-                                <span>Digital Solutions for Every Device</span>
-                            </button>
-                        </div>
-                        <h2>Mobile & Web Development for Your Success</h2>
-                    </div>
                     <div className={styles.container}>
+                        <div className={styles.servicesLineRight}>
+                            <Image src={rightLayer} alt="rightLayer" />
+                        </div>
+                        <div className={styles.servicesLineLeft}>
+                            <Image src={leftLayer} alt="leftLayer" />
+                        </div>
+                        <div className={styles.servicesDetail}>
+                            <div className={styles.headingBatch}>
+                                <button type="button" >
+                                    <Image src={buttonFx} alt="buttonFx" />
+                                    <span>Digital Solutions for Every Device</span>
+                                </button>
+                            </div>
+                            <h2>Mobile & Web Development for Your Success</h2>
+                        </div>
                         <div className={styles.servicesGrid}>
                             <div className={styles.servicesGridBox}>
                                 <div className={styles.servicesGridBox1}>

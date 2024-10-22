@@ -7,13 +7,17 @@ footer {
         gap: 60px 30px;
         margin-bottom: 36px;
 
-        @include breakpoint ("lg-max") {
+        @include breakpoint("lg-max") {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
 
         @include breakpoint("md-max") {
             grid-template-columns: repeat(1, 1fr);
+        }
+
+        @include breakpoint("sm-max") {
+            gap: 30px;
         }
 
         .footerDiv1 {
@@ -52,7 +56,7 @@ footer {
         }
 
         .footerDiv2 {
-            span {
+            h3 {
                 display: block;
                 margin-bottom: 24px;
                 font-family: "DM sans";
@@ -69,37 +73,43 @@ footer {
 
                 @include breakpoint("sm-max") {
                     flex-wrap: wrap;
+                    gap: 18px;
                 }
 
                 .footerDiv2Link {
                     display: flex;
                     flex-direction: column;
-                    align-items: start;
                     gap: 18px;
 
                     a {
-                        font-family: "DM sans";
-                        font-size: 18px;
-                        font-weight: 400;
-                        line-height: 26px;
-                        color: #0f0f1a;
-                        position: relative;
-
-                        &::after {
-                            position: absolute;
-                            content: "";
-                            top: 100%;
-                            left: 0;
-                            height: 1px;
-                            width: 0;
-                            background-color: #0f0f1a;
+                        span {
+                            font-family: "DM sans";
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 26px;
+                            color: #0f0f1a;
+                            position: relative;
                             transition: 0.3s ease-in-out;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0;
+                                left: 0;
+                                transform-origin: right;
+                                border-bottom: 1.5px solid #0f0f1a;
+                                transform: scaleX(0);
+                                transition: transform 0.3s ease-in-out;
+                            }
                         }
 
                         &:hover {
-                            &::after {
-                                width: 100%;
-                                transition: 0.3s ease-in-out;
+                            span {
+                                &::after {
+                                    transform-origin: left;
+                                    transform: scaleX(1);
+                                }
                             }
                         }
                     }
@@ -110,7 +120,7 @@ footer {
         .footerDiv3 {
             max-width: 450px;
 
-            h3 {
+            p {
                 font-size: 28px;
                 font-weight: 500;
                 line-height: 40px;

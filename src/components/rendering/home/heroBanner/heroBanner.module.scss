@@ -59,9 +59,9 @@
             }
 
             .heroBannerDetailHead {
-                display: grid;
-                grid-template-rows: repeat(3, 1fr);
-                
+                width: 100%;
+                display: inline-block;
+
                 h2 {
                     margin: 10px 0;
                     color: #0b0b14;

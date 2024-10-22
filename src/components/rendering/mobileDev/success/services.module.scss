@@ -12,7 +12,7 @@
             padding: 50px 20px;
         }
 
-        @include breakpoint("md-max") {
+        @include breakpoint("sm-max") {
             padding: 30px 0;
             border-radius: 20px;
         }
@@ -71,7 +71,7 @@
                 gap: 30px;
             }
 
-            @include breakpoint("sm-max") {
+            @include breakpoint("md-max") {
                 grid-template-columns: repeat(1, 1fr);
             }
 
@@ -110,6 +110,7 @@
                         font-weight: 500;
                         line-height: 31px;
                         color: #0f0f14;
+                        word-break: break-word;
 
                         @include breakpoint("sm-max")  {
                             margin: 15px 0 10px 0;
@@ -134,6 +135,7 @@
                     width: 100%;
                     max-height: 270px;
                     border-radius: 20px;
+                    object-fit: cover;
                 }
             }
         }

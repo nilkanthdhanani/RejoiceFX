@@ -36,20 +36,23 @@
         }
     }
 
+    ::-webkit-scrollbar {
+        height: 0;
+    }
+
     .tradingTracker {
         margin-bottom: 50px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px 0;
+        overflow: hidden;
+        overflow-x: auto;
 
         .tradingTrackerBox {
             position: relative;
             user-select: none;
-            flex: 1;
             min-width: 145px;
 
             @include breakpoint("sm-max") {
-                min-width: 100px;
+                min-width: 120px;
             }
 
             .tracker {
@@ -201,10 +204,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
 
         @include breakpoint("sm-max") {
-            flex-wrap: wrap;
-            gap: 20px;
             padding: 20px;
         }
 

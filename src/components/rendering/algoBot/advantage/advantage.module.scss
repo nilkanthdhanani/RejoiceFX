@@ -117,6 +117,7 @@
                     font-weight: 500;
                     line-height: 32px;
                     color: #0f0f1a;
+                    word-break: break-word;
 
                     @include breakpoint("sm-max") {
                         font-size: 20px;

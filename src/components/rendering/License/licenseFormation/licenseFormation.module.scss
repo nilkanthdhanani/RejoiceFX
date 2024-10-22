@@ -9,7 +9,7 @@
 
     .formationGrid {
         display: grid;
-        grid-template-columns: 40% 1fr;
+        grid-template-columns: auto 1fr;
         gap: 50px;
 
         @include breakpoint("lg-max") {
@@ -21,10 +21,12 @@
         }
 
         .formationGridImg {
+            max-width: 640px;
             max-height: 670px;
 
             @include breakpoint("lg-max") {
                 order: 2;
+                max-width: none;
             }
 
             @include breakpoint("sm-max") {

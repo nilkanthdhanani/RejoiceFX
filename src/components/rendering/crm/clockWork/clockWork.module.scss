@@ -115,12 +115,13 @@
             }
 
             .clockWorkBoxContent {
-                display: flex;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
                 gap: 40px;
                 margin-top: 59px;
 
                 @include breakpoint("md-max") {
-                    flex-wrap: wrap;
+                    grid-template-columns: 1fr;
                     gap: 20px;
                 }
 

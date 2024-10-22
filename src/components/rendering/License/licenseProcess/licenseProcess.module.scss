@@ -50,7 +50,7 @@
 
         .ProcessDivGird {
             display: grid;
-            grid-template-columns: 1fr 40%;
+            grid-template-columns: 1fr auto;
             gap: 90px;
 
             @include breakpoint("lg-max") {
@@ -171,6 +171,7 @@
             }
 
             .ProcessDivGirdImg {
+                max-width: 640px;
                 max-height: 600px;
 
                 @include breakpoint("sm-max") {

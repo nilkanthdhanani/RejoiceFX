@@ -28,7 +28,6 @@ h4,
 h5,
 h6 {
     font-family: "Poppins";
-    word-break: break-word;
 }
 
 a {
@@ -47,4 +46,15 @@ textarea {
 
 .no-scroll::-webkit-scrollbar {
     background: #fff;
+}
+
+@media (max-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        word-break: break-word;
+    }
 }

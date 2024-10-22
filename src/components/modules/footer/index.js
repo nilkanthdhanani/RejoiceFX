@@ -29,26 +29,26 @@ export default function Footer() {
             </div>
           </div>
           <div className={styles.footerDiv2}>
-            <span>Links</span>
+            <h3>Links</h3>
             <div className={styles.footerDiv2Main}>
               <div className={styles.footerDiv2Link}>
-                <Link href={"/forex-licence-mauritius"}>Forex Licenses</Link>
-                <Link href={"/ai-development"}>AI bot development</Link>
-                <Link href={"/forex-licence-mauritius"}>Mauritius Forex License</Link>
-                <Link href={"/algo-bot"}>Strategies</Link>
-                <Link href={"/forex-licence-vincent"}>St. Vincent Forex License</Link>
+                <Link href={"/forex-licence-mauritius"}><span>Forex Licenses</span></Link>
+                <Link href={"/ai-development"}><span>AI bot development</span></Link>
+                <Link href={"/forex-licence-mauritius"}><span>Mauritius Forex License</span></Link>
+                <Link href={"/algo-bot"}><span>Strategies</span></Link>
+                <Link href={"/forex-licence-vincent"}><span>St. Vincent Forex License</span></Link>
               </div>
               <div className={styles.footerDiv2Link}>
-                <Link href={"/ai-development"}>Forex Services</Link>
-                <Link href={"/forex-crm"}>Forex CRM</Link>
-                <Link href={"/mobile-development"}>AI Web/ Mobile Development</Link>
-                <Link href={"/algo-bot"}>Algo Bot & Strategies</Link>
-                <Link href={"/contactus"}>Contact Us</Link>
+                <Link href={"/ai-development"}><span>Forex Services</span></Link>
+                <Link href={"/forex-crm"}><span>Forex CRM</span></Link>
+                <Link href={"/mobile-development"}><span>AI Web/ Mobile Development</span></Link>
+                <Link href={"/algo-bot"}><span>Algo Bot & Strategies</span></Link>
+                <Link href={"/contactus"}><span>Contact Us</span></Link>
               </div>
             </div>
           </div>
           <div className={styles.footerDiv3}>
-            <h3>Get started to up your business with personal Rejoice FX</h3>
+            <p>Get started to up your business with personal Rejoice FX</p>
             <form>
               <input type="email" placeholder='Enter your email address' required />
               <button><span>Submit</span><ArrowSmallRight /></button>

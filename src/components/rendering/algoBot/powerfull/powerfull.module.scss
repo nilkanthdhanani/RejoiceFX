@@ -45,7 +45,7 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @include breakpoint("lg-max") {
+        @include breakpoint("md-max") {
             grid-template-columns: 1fr;
         }
 
@@ -95,6 +95,7 @@
                 font-weight: 500;
                 line-height: 32px;
                 color: #0f0f1a;
+                word-break: break-word;
 
                 @include breakpoint("sm-max") {
                     font-size: 20px;
