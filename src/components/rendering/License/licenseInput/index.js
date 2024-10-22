@@ -37,7 +37,7 @@ export default function LicenseInput() {
                             </div>
                             <div className={styles.inputBox}>
                                 <label>Country</label>
-                                <select>
+                                <select aria-label="Country" >
                                     <option>India</option>
                                     <option>USA</option>
                                     <option>Canada</option>

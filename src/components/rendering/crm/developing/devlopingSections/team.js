@@ -10,15 +10,15 @@ export default function Team() {
                 <h2>Our team works tirelessly to improve Rejoice FX</h2>
                 <div className={styles.teamDivList}>
                     <div className={styles.teamDivListBox}>
-                        <h5>70+</h5>
+                        <h3>70+</h3>
                         <p>Engineers working full-time</p>
                     </div>
                     <div className={styles.teamDivListBox}>
-                        <h5>30+</h5>
+                        <h3>30+</h3>
                         <p>Continuous Development</p>
                     </div>
                     <div className={styles.teamDivListBox}>
-                        <h5>160+</h5>
+                        <h3>160+</h3>
                         <p>Clients using Rejoice FX</p>
                     </div>
                 </div>

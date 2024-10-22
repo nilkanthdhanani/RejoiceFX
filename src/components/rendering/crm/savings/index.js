@@ -25,14 +25,14 @@ export default function Savings() {
                                 </div>
                                 <div className={styles.savingsBoxContent}>
                                     <div className={styles.savingsBoxContent1}>
-                                        <h4>Fixed savings</h4>
+                                        <h3>Fixed savings</h3>
                                         <p>Fixed savings</p>
                                         <p>Person commits particular amount of funds and receives %</p>
                                         <p>Broker can configure various plans per customer</p>
                                         <p>Broker can apply fees such as participation or redeem</p>
                                     </div>
                                     <div className={styles.savingsBoxContent1}>
-                                        <h4>Flexible savings</h4>
+                                        <h3>Flexible savings</h3>
                                         <p>Unlimited top-ups of the program</p>
                                         <p>Broker can apply tiers to attract more funds</p>
                                         <p>Percentage can be adjusted by the broker depending on the demand</p>
