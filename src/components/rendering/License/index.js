@@ -1,3 +1,4 @@
+import Trading from "@/components/modules/trading";
 import LicenseAdvantage from "./licenseAdvantage";
 import LicenseBanner from "./licensebanner";
 import LicenseFormation from "./licenseFormation";
@@ -35,6 +36,7 @@ export default function LicensePage({ content }) {
       <LicenseAdvantage />
       <Marquee />
       <LicenseInput />
+      <Trading />
     </main>
   );
 }

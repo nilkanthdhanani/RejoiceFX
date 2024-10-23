@@ -1,3 +1,4 @@
+import Trading from "@/components/modules/trading";
 import Brokerage from "./brokerage";
 import ClockWork from "./clockWork";
 import CrmBanner from "./crmbanner";
@@ -22,6 +23,7 @@ export default function CrmPage() {
             <Savings />
             <Plugged />
             <FAQ />
+            <Trading />
         </main>
     )
 }

@@ -1,10 +1,10 @@
-import styles from './trading.module.scss'
+import styles from './tranding.module.scss'
 import Image from "next/image";
 
 import buttonFx from "@/assets/images/svg/buttonFx.svg";
 import tradingImg from "@/assets/images/webp/tradingImg.webp";
 
-export default function Trading() {
+export default function Tranding() {
     return (
         <section className={styles.trading}>
             <div className={styles.container}>

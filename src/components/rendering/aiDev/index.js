@@ -1,3 +1,4 @@
+import Trading from "@/components/modules/trading";
 import AiDevBanner from "./aiDevBanner";
 import Boost from "./boost";
 import Building from "./building";
@@ -14,6 +15,7 @@ export default function AiDevPage() {
             <Boost />
             <Process />
             <Building />
+            <Trading/>
         </main>
     )
 }

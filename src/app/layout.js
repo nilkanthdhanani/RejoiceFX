@@ -4,8 +4,6 @@ import "../assets/styles/main.scss";
 import "react-loading-skeleton/dist/skeleton.css";
 import Header from "@/components/modules/header";
 import Footer from "@/components/modules/footer";
-import LazyImage from "@/components/modules/lazyImage";
-import Trading from "@/components/modules/trading";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -22,7 +20,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header />
         {children}
-        <Trading />
         <Footer />
       </body>
     </html>
