@@ -28,8 +28,9 @@ footer {
                 display: flex;
                 gap: 30px;
 
-                @include breakpoint("sm-max") {
+                @include breakpoint("md-max") {
                     flex-wrap: wrap;
+                    justify-content: space-between;
                 }
             }
 
@@ -56,6 +57,8 @@ footer {
         }
 
         .footerDiv2 {
+            max-width: 510px;
+
             h3 {
                 display: block;
                 margin-bottom: 24px;
@@ -68,11 +71,12 @@ footer {
             }
 
             .footerDiv2Main {
-                display: flex;
+                display: grid;
+                grid-template-columns: auto auto;
                 gap: 50px;
 
                 @include breakpoint("sm-max") {
-                    flex-wrap: wrap;
+                    grid-template-columns: 1fr;
                     gap: 18px;
                 }
 
