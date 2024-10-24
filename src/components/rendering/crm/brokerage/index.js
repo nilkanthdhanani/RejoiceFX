@@ -20,7 +20,9 @@ export default function Brokerage() {
                                 </div>
                             </div>
                             <div className={styles.brokerageImgae}>
-                                <Image src={brokerageImg} alt="brokerageImg" />
+                                <div className={styles.brokerageImgaeDiv}>
+                                    <Image src={brokerageImg} alt="brokerageImg" />
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -41,7 +41,7 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @include breakpoint("sm-max") {
+        @include breakpoint("md-max") {
             grid-template-columns: 1fr;
             gap: 30px;
         }
@@ -61,7 +61,7 @@
                 gap: 14px;
                 margin-bottom: 28px;
 
-                @include breakpoint("sm-max") { 
+                @include breakpoint("md-max") { 
                     padding-left: 15px;
                 }
 
@@ -91,9 +91,11 @@
                 order: 3;
                 grid-column: span 2;
                 max-width: none;
+                display: flex;
+                justify-content: center;
             }
 
-            @include breakpoint("sm-max") { 
+            @include breakpoint("md-max") { 
                 grid-column: auto;
             }
 
@@ -102,7 +104,11 @@
                 max-height: 460px;
                 border-radius: 24px;
 
-                @include breakpoint("sm-max") { 
+                @include breakpoint("lg-max") {
+                    width: auto;
+                }
+
+                @include breakpoint("sm-max") {
                     max-height: 400px;
                 }
             }

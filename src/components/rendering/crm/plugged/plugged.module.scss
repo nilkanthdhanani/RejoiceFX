@@ -50,14 +50,9 @@
         }
 
         .pluggedDivImg {
-            max-width: 840px;
-
-            @include breakpoint("lg-max") {
-                max-width: none;
-            }
-
             img {
                 width: 100%;
+                height: auto;
                 max-height: 550px;
                 border-radius: 24px;
                 object-fit: cover;

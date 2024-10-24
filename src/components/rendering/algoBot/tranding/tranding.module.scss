@@ -9,7 +9,7 @@
 
     .tradingDiv {
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 40% 1fr;
         gap: 50px;
 
         @include breakpoint("lg-max") {
@@ -21,15 +21,14 @@
         }
 
         .tradingDivImg {
-            max-width: 640px;
-
             @include breakpoint("lg-max") {
                 order: 2;
-                max-width: none;
             }
 
             img {
                 width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1.05;
                 max-height: 670px;
                 border-radius: 30px;
                 object-fit: cover;

@@ -31,17 +31,16 @@
     .brokerageDiv {
         position: relative;
         z-index: 1;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 52.5%;
         gap: 30px;
 
         @include breakpoint("lg-max") {
-            flex-direction: column;
+            grid-template-columns: 1fr;
             gap: 50px;
         }
-        
+
         .brokerageHead {
-            flex: 1;
             max-width: 650px;
             position: relative;
             z-index: 2;
@@ -63,22 +62,28 @@
         }
 
         .brokerageImgae {
-            flex: 1;
-            max-width: 840px;
-            min-height: 600px;
-            margin-bottom: -270px;
+            position: relative;
 
-            @include breakpoint("lg-max") {
-                margin-bottom: 0;
-                min-height: auto;
-            }
+            .brokerageImgaeDiv {
+                position: absolute;
+                top: 0;
+                left: 0;
+                
+                @include breakpoint("lg-max") {
+                    position: relative;
+                }
 
-            img {
-                width: 100%;
-                height: 100%;
-                max-height: 600px;
-                object-fit: cover;
-                border-radius: 24px;
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-height: 600px;
+                    object-fit: cover;
+                    border-radius: 24px;
+
+                    @include breakpoint("sm-max") {
+                        max-height: 400px;
+                    }
+                }
             }
         }
     }

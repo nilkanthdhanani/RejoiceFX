@@ -40,7 +40,7 @@
         border-radius: 34px;
         padding: 62px;
         display: grid;
-        grid-template-columns: auto 450px;
+        grid-template-columns: auto 31%;
         align-items: center;
         justify-content: space-between;
         gap: 30px;
@@ -63,6 +63,11 @@
             }
 
             img {
+                height: auto;
+                aspect-ratio: 1 / 1;
+                max-height: 447px;
+                border-radius: 20px;
+
                 @include breakpoint("sm-max") {
                     max-height: 400px;
                 }
@@ -185,7 +190,7 @@
     }
 
     .clockWorkBox2 {
-        grid-template-columns: 450px auto;
+        grid-template-columns: 31% auto;
 
         @include breakpoint("lg-max") {
             grid-template-columns: 1fr;

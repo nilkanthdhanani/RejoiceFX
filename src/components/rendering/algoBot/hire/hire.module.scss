@@ -18,7 +18,7 @@
 
     .hireDiv {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr 40%;
         gap: 30px;
 
         @include breakpoint("lg-max"){
@@ -115,17 +115,13 @@
         }
 
         .hireDivImg {
-            max-width: 640px;
-
-            @include breakpoint("lg-max") {
-                max-width: none;
-            }
-
             img {
-                max-height: 640px;
                 width: 100%;
-                border-radius: 30px;
+                height: auto;
+                max-height: 640px;
+                aspect-ratio: 1 / 1.05;
                 object-fit: cover;
+                border-radius: 30px;
 
                 @include breakpoint("sm-max") {
                     max-height: 400px;
