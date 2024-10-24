@@ -86,13 +86,13 @@ export default function HeroBanner() {
                         </div>
                         <Slider {...setting}>
                             <div className={styles.heroBannerDetailHead}>
-                                <h2>Optimize Operations with Our CRM</h2>
+                                <h1>Optimize Operations with Our CRM</h1>
                             </div>
                             <div className={styles.heroBannerDetailHead}>
-                                <h2>Obtain Your Forex Broker Licence</h2>
+                                <h1>Obtain Your Forex Broker Licence</h1>
                             </div>
                             <div className={styles.heroBannerDetailHead}>
-                                <h2>Trade Better, Smarter, Faster</h2>
+                                <h1>Trade Better, Smarter, Faster</h1>
                             </div>
                         </Slider>
                         <p>Streamline your client management and enhance efficiency with our tailored CRM solutions. Designed specifically for Forex brokers to help you stay organized and boost performance.</p>

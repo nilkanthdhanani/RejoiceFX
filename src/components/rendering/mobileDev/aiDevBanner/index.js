@@ -28,7 +28,7 @@ export default function AiDevBanner() {
                                 <span>Mobile & Web Solution</span>
                             </button>
                         </div>
-                        <h2>Comprehensive Mobile & Web Development Solutions</h2>
+                        <h1>Comprehensive Mobile & Web Development Solutions</h1>
                         <p>At Rejoice FX, we specialize in developing high-quality mobile apps and web solutions tailored to your business needs.</p>
                     </div>
                 </div>

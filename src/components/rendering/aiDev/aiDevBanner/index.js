@@ -28,7 +28,7 @@ export default function AiDevBanner() {
                                 <span>AI Development</span>
                             </button>
                         </div>
-                        <h2>AI/ML Development Services: Empowering Your Business</h2>
+                        <h1>AI/ML Development Services: Empowering Your Business</h1>
                         <p>Drive innovation and efficiency in your business with expert AI & ML services by Rejoice FX.</p>
                     </div>
                 </div>

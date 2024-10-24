@@ -28,7 +28,7 @@ export default function ContactBanner() {
                                 <span>Get in Touch with Rejoicefx</span>
                             </button>
                         </div>
-                        <h2>Reach Out for Any Inquiries or Support</h2>
+                        <h1>Reach Out for Any Inquiries or Support</h1>
                         <p>Simply fill out the form below, and we’ll get back to you as soon as possible.</p>
                     </div>
                 </div>

@@ -29,7 +29,7 @@ export default function CrmBanner() {
                                 <span>Forex CRM</span>
                             </button>
                         </div>
-                        <h2>Transform Client Management with Forex CRM</h2>
+                        <h1>Transform Client Management with Forex CRM</h1>
                         <p>This highlights the core purpose of the CRM while making it clear that it's tailored for Forex brokers.</p>
                     </div>
                     <div className={styles.crmBannerImgDiv}>

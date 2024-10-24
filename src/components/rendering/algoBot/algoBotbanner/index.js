@@ -29,7 +29,7 @@ export default function AlgoBotBanner() {
                                 <span>Algo Bot</span>
                             </button>
                         </div>
-                        <h2>Fast, Smart, and Tailored Algo Trading</h2>
+                        <h1>Fast, Smart, and Tailored Algo Trading</h1>
                         <p>Rejoice FX’s Algo Trading empowers you to automate strategies with precision, transforming your trading into a seamless experience.</p>
                     </div>
                     <div className={styles.AlgoBotBannerImgDiv}>

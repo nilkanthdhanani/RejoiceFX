@@ -27,7 +27,7 @@ export default function LicenseBanner({ bannerButton, bannerTitle, bannerSubTitl
                                 <span>{bannerButton}</span>
                             </button>
                         </div>
-                        <h2>{bannerTitle}</h2>
+                        <h1>{bannerTitle}</h1>
                         <p>{bannerSubTitle}</p>
                     </div>
                 </div>
